@@ -50,6 +50,11 @@
       "test_id": "T-SOURCE-011",
       "status": "pass",
       "evidence": "validation.md and report/source files; model-authored review"
+    },
+    {
+      "test_id": "T-PUBLISH-009",
+      "status": "pass",
+      "evidence": "../../010-connector-release-requests/evidence/published-release-verification.json; github-run.json; github-jobs.json"
     }
   ]
 }

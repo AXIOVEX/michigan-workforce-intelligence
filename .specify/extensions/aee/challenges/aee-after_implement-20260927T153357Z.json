@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "mode": "challenge",
+  "project": "michigan-workforce-intelligence",
+  "phase": "after_implement",
+  "outcome": "iterate",
+  "summary": "Assessed 4 claim(s); found 2 failure mode(s); 0 claim(s) below the 0.70 confidence threshold.",
+  "created_at": "2026-09-27T15:33:57.756230Z",
+  "failures": [
+    {
+      "id": "AEE-REQ-RELEASE-002-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-RELEASE-002",
+      "challenge": "Irreducibility challenge",
+      "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+      "severity": "medium",
+      "category": "coverage_gap",
+      "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-RELEASE-003-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-RELEASE-003",
+      "challenge": "Irreducibility challenge",
+      "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+      "severity": "medium",
+      "category": "coverage_gap",
+      "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+      "resolved": false
+    }
+  ],
+  "recoveries": [
+    {
+      "failure_id": "AEE-REQ-RELEASE-002-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-RELEASE-002",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    },
+    {
+      "failure_id": "AEE-REQ-RELEASE-003-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-RELEASE-003",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    }
+  ]
+}

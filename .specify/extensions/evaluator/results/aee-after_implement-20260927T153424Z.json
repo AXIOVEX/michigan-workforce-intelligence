@@ -1,0 +1,339 @@
+{
+  "schema_version": "1.0",
+  "evaluator": {
+    "id": "aee",
+    "version": "1.0.0",
+    "name": "Applied Epistemic Engineering",
+    "url": "https://github.com/electrohire/spec-kit-aee"
+  },
+  "phase": "after_implement",
+  "outcome": "iterate",
+  "summary": "Assessed 4 claim(s); found 2 failure mode(s); 0 claim(s) below the 0.70 confidence threshold.",
+  "findings": [
+    {
+      "id": "AEE-REQ-RELEASE-002-IRREDUCIBILITY-CHALLENGE",
+      "severity": "medium",
+      "kind": "coverage_gap",
+      "subject": "REQ-RELEASE-002",
+      "description": "Claim may contain multiple independently falsifiable propositions",
+      "evidence_refs": [
+        {
+          "ref": "specs/010-connector-release-requests/evidence/portable-linux.log",
+          "kind": "observed",
+          "description": "Executed admission boundary tests passed."
+        }
+      ],
+      "provenance_refs": [],
+      "uncertainty": "insufficient_evidence",
+      "recommended_action": "revise",
+      "rationale": "Irreducibility challenge"
+    },
+    {
+      "id": "AEE-REQ-RELEASE-003-IRREDUCIBILITY-CHALLENGE",
+      "severity": "medium",
+      "kind": "coverage_gap",
+      "subject": "REQ-RELEASE-003",
+      "description": "Claim may contain multiple independently falsifiable propositions",
+      "evidence_refs": [
+        {
+          "ref": ".github/workflows/reports-release.yml",
+          "kind": "asserted",
+          "description": "Workflow dependency and permission inspection; remote execution still pending."
+        },
+        {
+          "ref": "specs/010-connector-release-requests/evidence/github-jobs.json",
+          "kind": "observed",
+          "description": "Observed successful GitHub execution"
+        }
+      ],
+      "provenance_refs": [],
+      "uncertainty": "insufficient_evidence",
+      "recommended_action": "revise",
+      "rationale": "Irreducibility challenge"
+    }
+  ],
+  "next_action": {
+    "kind": "iterate",
+    "target_phase": "implement",
+    "message": "Revise the current phase to address 2 finding(s)."
+  },
+  "metadata": {
+    "timestamp": "2026-09-27T15:34:24.413184Z",
+    "artifacts_evaluated": [
+      "specs/010-connector-release-requests/claims-published.json"
+    ],
+    "model": null,
+    "deterministic": true,
+    "aee_methodology_version": "1.0"
+  },
+  "state": {
+    "aee": {
+      "project": "michigan-workforce-intelligence",
+      "claims": [
+        {
+          "id": "REQ-RELEASE-001",
+          "text": "A request-only main commit can start report publication through the connected GitHub account.",
+          "kind": "requirement",
+          "status": "draft",
+          "boundary": [
+            "AXIOVEX/michigan-workforce-intelligence report workflow"
+          ],
+          "depends_on": [],
+          "conflicts_with": [],
+          "evidence": [
+            {
+              "ref": "specs/010-connector-release-requests/evidence/github-run.json",
+              "kind": "observed",
+              "direction": "supports",
+              "source_quality": "primary",
+              "description": "Observed successful GitHub execution",
+              "source_id": "",
+              "independent_of": [],
+              "observed_at": null,
+              "content_hash": "98cdf2d2400f737f95089d80d7a75d8e93bc651f8bafcd996cbec1ea06b60dad"
+            }
+          ],
+          "assumptions": [],
+          "alternatives": [],
+          "falsification_tests": [
+            "A targeted validation test or remote workflow contradicts this claim."
+          ],
+          "uncertainty": "insufficient_evidence",
+          "severity": "medium",
+          "source_ref": "",
+          "domain": "",
+          "confidence": 0.8725,
+          "confidence_band": "high",
+          "failures": [],
+          "metadata": {}
+        },
+        {
+          "id": "REQ-RELEASE-002",
+          "text": "The resolver rejects invalid versions, stale source SHAs, other refs and mixed commits.",
+          "kind": "requirement",
+          "status": "draft",
+          "boundary": [
+            "AXIOVEX/michigan-workforce-intelligence report workflow"
+          ],
+          "depends_on": [],
+          "conflicts_with": [],
+          "evidence": [
+            {
+              "ref": "specs/010-connector-release-requests/evidence/portable-linux.log",
+              "kind": "observed",
+              "direction": "supports",
+              "source_quality": "test",
+              "description": "Executed admission boundary tests passed.",
+              "source_id": "",
+              "independent_of": [],
+              "observed_at": null,
+              "content_hash": "2c5b21bd9cffeac29b414d798479da683e762ae71c93a84bb31cfc0a89ba2460"
+            }
+          ],
+          "assumptions": [],
+          "alternatives": [],
+          "falsification_tests": [
+            "A targeted validation test or remote workflow contradicts this claim."
+          ],
+          "uncertainty": "insufficient_evidence",
+          "severity": "medium",
+          "source_ref": "",
+          "domain": "",
+          "confidence": 0.9,
+          "confidence_band": "high",
+          "failures": [
+            {
+              "id": "AEE-REQ-RELEASE-002-IRREDUCIBILITY-CHALLENGE",
+              "claim_id": "REQ-RELEASE-002",
+              "challenge": "Irreducibility challenge",
+              "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+              "severity": "medium",
+              "category": "coverage_gap",
+              "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+              "resolved": false
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "id": "REQ-RELEASE-003",
+          "text": "Publication requires all existing portable, Docker report and checksum gates.",
+          "kind": "requirement",
+          "status": "draft",
+          "boundary": [
+            "AXIOVEX/michigan-workforce-intelligence report workflow"
+          ],
+          "depends_on": [],
+          "conflicts_with": [],
+          "evidence": [
+            {
+              "ref": ".github/workflows/reports-release.yml",
+              "kind": "asserted",
+              "direction": "supports",
+              "source_quality": "model",
+              "description": "Workflow dependency and permission inspection; remote execution still pending.",
+              "source_id": "",
+              "independent_of": [],
+              "observed_at": null,
+              "content_hash": "2068c8830a3c948d900ea442d914447bf48d29747912995971746f40441cfd1a"
+            },
+            {
+              "ref": "specs/010-connector-release-requests/evidence/github-jobs.json",
+              "kind": "observed",
+              "direction": "supports",
+              "source_quality": "primary",
+              "description": "Observed successful GitHub execution",
+              "source_id": "",
+              "independent_of": [],
+              "observed_at": null,
+              "content_hash": "7cf912f69ee7322c90d80513edb0e776a6a37a5db267c16a3300352a0773e5e6"
+            }
+          ],
+          "assumptions": [],
+          "alternatives": [],
+          "falsification_tests": [
+            "A targeted validation test or remote workflow contradicts this claim."
+          ],
+          "uncertainty": "insufficient_evidence",
+          "severity": "medium",
+          "source_ref": "",
+          "domain": "",
+          "confidence": 0.973875,
+          "confidence_band": "high",
+          "failures": [
+            {
+              "id": "AEE-REQ-RELEASE-003-IRREDUCIBILITY-CHALLENGE",
+              "claim_id": "REQ-RELEASE-003",
+              "challenge": "Irreducibility challenge",
+              "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+              "severity": "medium",
+              "category": "coverage_gap",
+              "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+              "resolved": false
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "id": "REQ-RELEASE-004",
+          "text": "Downloaded release asset hashes match the published checksum file.",
+          "kind": "requirement",
+          "status": "draft",
+          "boundary": [
+            "AXIOVEX/michigan-workforce-intelligence report workflow"
+          ],
+          "depends_on": [],
+          "conflicts_with": [],
+          "evidence": [
+            {
+              "ref": "specs/010-connector-release-requests/evidence/published-release-verification.json",
+              "kind": "observed",
+              "direction": "supports",
+              "source_quality": "test",
+              "description": "Downloaded original release bytes; SHA-256 and manifest identity verified.",
+              "source_id": "",
+              "independent_of": [],
+              "observed_at": null,
+              "content_hash": "9bb5cafaf973edefd866dd6eeba3f8f369adaa8e405a38ac9fc384be1ea7a59e"
+            }
+          ],
+          "assumptions": [],
+          "alternatives": [],
+          "falsification_tests": [
+            "A targeted validation test or remote workflow contradicts this claim."
+          ],
+          "uncertainty": "insufficient_evidence",
+          "severity": "medium",
+          "source_ref": "",
+          "domain": "",
+          "confidence": 0.9,
+          "confidence_band": "high",
+          "failures": [],
+          "metadata": {}
+        }
+      ],
+      "scores": {
+        "REQ-RELEASE-001": {
+          "claim_id": "REQ-RELEASE-001",
+          "direct_score": 0.8725,
+          "propagated_score": 0.8725,
+          "band": "high",
+          "components": {
+            "evidence": 0.95,
+            "independence": 0.5,
+            "falsifiability": 1.0,
+            "boundary": 1.0,
+            "contradiction_penalty": 0
+          },
+          "notes": [
+            "Fewer than two independent supporting sources"
+          ]
+        },
+        "REQ-RELEASE-002": {
+          "claim_id": "REQ-RELEASE-002",
+          "direct_score": 0.9,
+          "propagated_score": 0.9,
+          "band": "high",
+          "components": {
+            "evidence": 1.0,
+            "independence": 0.5,
+            "falsifiability": 1.0,
+            "boundary": 1.0,
+            "contradiction_penalty": 0
+          },
+          "notes": [
+            "Fewer than two independent supporting sources"
+          ]
+        },
+        "REQ-RELEASE-003": {
+          "claim_id": "REQ-RELEASE-003",
+          "direct_score": 0.973875,
+          "propagated_score": 0.973875,
+          "band": "high",
+          "components": {
+            "evidence": 0.9525,
+            "independence": 1.0,
+            "falsifiability": 1.0,
+            "boundary": 1.0,
+            "contradiction_penalty": 0
+          },
+          "notes": []
+        },
+        "REQ-RELEASE-004": {
+          "claim_id": "REQ-RELEASE-004",
+          "direct_score": 0.9,
+          "propagated_score": 0.9,
+          "band": "high",
+          "components": {
+            "evidence": 1.0,
+            "independence": 0.5,
+            "falsifiability": 1.0,
+            "boundary": 1.0,
+            "contradiction_penalty": 0
+          },
+          "notes": [
+            "Fewer than two independent supporting sources"
+          ]
+        }
+      },
+      "recoveries": [
+        {
+          "failure_id": "AEE-REQ-RELEASE-002-IRREDUCIBILITY-CHALLENGE",
+          "claim_id": "REQ-RELEASE-002",
+          "strategy": "decompose",
+          "action": "Split the claim into atomic propositions and link them explicitly.",
+          "priority": 3,
+          "verification": "Every resulting claim contains one independently falsifiable proposition."
+        },
+        {
+          "failure_id": "AEE-REQ-RELEASE-003-IRREDUCIBILITY-CHALLENGE",
+          "claim_id": "REQ-RELEASE-003",
+          "strategy": "decompose",
+          "action": "Split the claim into atomic propositions and link them explicitly.",
+          "priority": 3,
+          "verification": "Every resulting claim contains one independently falsifiable proposition."
+        }
+      ]
+    }
+  }
+}

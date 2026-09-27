@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "claims": [
+    {
+      "id": "REQ-RELEASE-001",
+      "text": "A request-only main commit can start report publication through the connected GitHub account.",
+      "kind": "requirement",
+      "status": "draft",
+      "boundary": [
+        "AXIOVEX/michigan-workforce-intelligence report workflow"
+      ],
+      "falsification_tests": [
+        "A targeted validation test or remote workflow contradicts this claim."
+      ],
+      "evidence": [
+        {
+          "kind": "observed",
+          "direction": "supports",
+          "source_quality": "primary",
+          "ref": "specs/010-connector-release-requests/evidence/github-run.json",
+          "description": "Observed successful GitHub execution",
+          "content_hash": "98cdf2d2400f737f95089d80d7a75d8e93bc651f8bafcd996cbec1ea06b60dad"
+        }
+      ]
+    },
+    {
+      "id": "REQ-RELEASE-002",
+      "text": "The resolver rejects invalid versions, stale source SHAs, other refs and mixed commits.",
+      "kind": "requirement",
+      "status": "draft",
+      "boundary": [
+        "AXIOVEX/michigan-workforce-intelligence report workflow"
+      ],
+      "falsification_tests": [
+        "A targeted validation test or remote workflow contradicts this claim."
+      ],
+      "evidence": [
+        {
+          "kind": "observed",
+          "direction": "supports",
+          "source_quality": "test",
+          "ref": "specs/010-connector-release-requests/evidence/portable-linux.log",
+          "description": "Executed admission boundary tests passed.",
+          "content_hash": "2c5b21bd9cffeac29b414d798479da683e762ae71c93a84bb31cfc0a89ba2460"
+        }
+      ]
+    },
+    {
+      "id": "REQ-RELEASE-003",
+      "text": "Publication requires all existing portable, Docker report and checksum gates.",
+      "kind": "requirement",
+      "status": "draft",
+      "boundary": [
+        "AXIOVEX/michigan-workforce-intelligence report workflow"
+      ],
+      "falsification_tests": [
+        "A targeted validation test or remote workflow contradicts this claim."
+      ],
+      "evidence": [
+        {
+          "kind": "asserted",
+          "direction": "supports",
+          "source_quality": "model",
+          "ref": ".github/workflows/reports-release.yml",
+          "description": "Workflow dependency and permission inspection; remote execution still pending.",
+          "content_hash": "2068c8830a3c948d900ea442d914447bf48d29747912995971746f40441cfd1a"
+        },
+        {
+          "kind": "observed",
+          "direction": "supports",
+          "source_quality": "primary",
+          "ref": "specs/010-connector-release-requests/evidence/github-jobs.json",
+          "description": "Observed successful GitHub execution",
+          "content_hash": "7cf912f69ee7322c90d80513edb0e776a6a37a5db267c16a3300352a0773e5e6"
+        }
+      ]
+    },
+    {
+      "id": "REQ-RELEASE-004",
+      "text": "Downloaded release asset hashes match the published checksum file.",
+      "kind": "requirement",
+      "status": "draft",
+      "boundary": [
+        "AXIOVEX/michigan-workforce-intelligence report workflow"
+      ],
+      "falsification_tests": [
+        "A targeted validation test or remote workflow contradicts this claim."
+      ],
+      "evidence": [
+        {
+          "kind": "observed",
+          "direction": "supports",
+          "source_quality": "test",
+          "ref": "specs/010-connector-release-requests/evidence/published-release-verification.json",
+          "description": "Downloaded original release bytes; SHA-256 and manifest identity verified.",
+          "content_hash": "9bb5cafaf973edefd866dd6eeba3f8f369adaa8e405a38ac9fc384be1ea7a59e"
+        }
+      ]
+    }
+  ]
+}

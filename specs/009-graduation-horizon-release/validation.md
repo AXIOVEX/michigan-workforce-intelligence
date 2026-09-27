@@ -11,3 +11,7 @@ AEE initial prose plan/tasks parses produced zero-claim passes and are not subst
 Remote release publication and downloadable asset verification remain pending until authenticated dispatch succeeds. No release is represented as published merely because local PDFs exist.
 
 Final rebuild exposed one truncated renderer output despite exit zero. The builder now decodes every PNG and retries only a damaged page once, failing if the retry is invalid. The eight edition boundary tests and Ruff passed after this change.
+
+## Verified publication (September 27)
+
+Spec 010 resolved connector dispatch through a narrowly scoped request commit. Run 36321581479 succeeded on all three portable platforms, Docker report build and publication. Release reports-2026.09.27.131143Z targets d0fbc71af5dc4a1f2650984105c21517f59f683c. Six downloaded release assets and 33 packaged file hashes verified; page counts remain 3/13/15. Evidence: ../010-connector-release-requests/evidence/. This supersedes the earlier pending publication statements. The full application Docker CI remains unexecuted locally; native full CI passed.

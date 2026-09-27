@@ -1,0 +1,55 @@
+{
+  "verified_at": "2026-09-27T15:32:49.683447+00:00",
+  "release_url": "https://github.com/AXIOVEX/michigan-workforce-intelligence/releases/tag/reports-2026.09.27.131143Z",
+  "release_id": 397655722,
+  "version": "2026.09.27.131143Z",
+  "source_commit": "d0fbc71af5dc4a1f2650984105c21517f59f683c",
+  "assets": [
+    {
+      "name": "executive-brief.pdf",
+      "size": 110942,
+      "browser_download_url": "https://github.com/AXIOVEX/michigan-workforce-intelligence/releases/download/reports-2026.09.27.131143Z/executive-brief.pdf"
+    },
+    {
+      "name": "job-continuity-solutions.pdf",
+      "size": 149921,
+      "browser_download_url": "https://github.com/AXIOVEX/michigan-workforce-intelligence/releases/download/reports-2026.09.27.131143Z/job-continuity-solutions.pdf"
+    },
+    {
+      "name": "jobs-economic-report.pdf",
+      "size": 288808,
+      "browser_download_url": "https://github.com/AXIOVEX/michigan-workforce-intelligence/releases/download/reports-2026.09.27.131143Z/jobs-economic-report.pdf"
+    },
+    {
+      "name": "manifest.json",
+      "size": 5050,
+      "browser_download_url": "https://github.com/AXIOVEX/michigan-workforce-intelligence/releases/download/reports-2026.09.27.131143Z/manifest.json"
+    },
+    {
+      "name": "reports-2026.09.27.131143Z.zip",
+      "size": 593815,
+      "browser_download_url": "https://github.com/AXIOVEX/michigan-workforce-intelligence/releases/download/reports-2026.09.27.131143Z/reports-2026.09.27.131143Z.zip"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 1138,
+      "browser_download_url": "https://github.com/AXIOVEX/michigan-workforce-intelligence/releases/download/reports-2026.09.27.131143Z/SHA256SUMS.txt"
+    }
+  ],
+  "downloaded_sha256": {
+    "SHA256SUMS.txt": "68790f49002fb57b7621bc1eb0b2855b1b8778ae157ddbfef1f2136f1b45a327",
+    "executive-brief.pdf": "08c199149d06f284a7119f93d3eea7e2a1449a9cd3dc0a742bcb63bb3e34055c",
+    "job-continuity-solutions.pdf": "5233c2ca6b1ebf69259a5abd98470aedec92ed65885f5966bad5667fa7a0f624",
+    "jobs-economic-report.pdf": "f2c748cc870e290798f60957b721f5e66736e64e208afbca5442dbe285fb04cc",
+    "manifest.json": "d5af7a5c930c88de1225607e4a0bddf419ff7f0e748be9ae276d334a9a080519",
+    "reports-2026.09.27.131143Z.zip": "7ec56bdba741dd42d98c123c1c4d2170f65e4864dc799cad4c6d4be33ea81380"
+  },
+  "pdf_pages": {
+    "job-continuity-solutions.pdf": 15,
+    "executive-brief.pdf": 3,
+    "jobs-economic-report.pdf": 13
+  },
+  "zip_members_verified": 33,
+  "checksums_match": true,
+  "manifest_identity_matches": true
+}

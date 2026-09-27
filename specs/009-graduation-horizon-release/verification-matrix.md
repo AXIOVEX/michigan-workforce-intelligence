@@ -1,6 +1,6 @@
 # Verification matrix
 
-Review evidence is an authored inspection record; it is not independent test proof. Publication and unavailable environment checks remain open.
+Review evidence is an authored inspection record; it is not independent test proof. Publication and the remote report workflow are verified in spec 010. Full application Docker CI remains unexecuted locally.
 
 | Test | Requirement | Layer | Gate |
 | --- | --- | --- | --- |

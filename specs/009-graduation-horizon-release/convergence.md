@@ -8,3 +8,5 @@ The implementation assessment and challenge each processed 11 structured require
 - Publication: unsupported until remote release assets are verified. Docker/cross-platform execution also remains open.
 
 Convergence stops at the verified implementation boundary with explicit remaining gaps; no confidence score is used to waive release gates or manufacture source independence. Separate source-specific challenges and their dispositions are in the edition evidence-review.md.
+
+Publication and remote report-build/portable checks are now observed and verified; see spec 010 evidence and validation.md publication update. Remaining epistemic limitations for forecasts, curriculum recommendations and independent employer review are unchanged.
