@@ -1,0 +1,863 @@
+{
+  "schema_version": "1.0",
+  "evaluator": {
+    "id": "aee",
+    "version": "1.0.0",
+    "name": "Applied Epistemic Engineering",
+    "url": "https://github.com/electrohire/spec-kit-aee"
+  },
+  "phase": "after_tasks",
+  "outcome": "iterate",
+  "summary": "Assessed 10 claim(s); found 12 failure mode(s); 10 claim(s) below the 0.70 confidence threshold.",
+  "findings": [
+    {
+      "id": "AEE-REQ-FRESHNESS-001-IRREDUCIBILITY-CHALLENGE",
+      "severity": "medium",
+      "kind": "coverage_gap",
+      "subject": "specs/009-graduation-horizon-release/spec.md",
+      "description": "Claim may contain multiple independently falsifiable propositions",
+      "evidence_refs": [],
+      "provenance_refs": [
+        "specs/009-graduation-horizon-release/spec.md"
+      ],
+      "uncertainty": "insufficient_evidence",
+      "recommended_action": "revise",
+      "rationale": "Irreducibility challenge"
+    },
+    {
+      "id": "AEE-REQ-LABOR-002-IRREDUCIBILITY-CHALLENGE",
+      "severity": "medium",
+      "kind": "coverage_gap",
+      "subject": "specs/009-graduation-horizon-release/spec.md",
+      "description": "Claim may contain multiple independently falsifiable propositions",
+      "evidence_refs": [],
+      "provenance_refs": [
+        "specs/009-graduation-horizon-release/spec.md"
+      ],
+      "uncertainty": "insufficient_evidence",
+      "recommended_action": "revise",
+      "rationale": "Irreducibility challenge"
+    },
+    {
+      "id": "AEE-REQ-EDUCATION-003-IRREDUCIBILITY-CHALLENGE",
+      "severity": "medium",
+      "kind": "coverage_gap",
+      "subject": "specs/009-graduation-horizon-release/spec.md",
+      "description": "Claim may contain multiple independently falsifiable propositions",
+      "evidence_refs": [],
+      "provenance_refs": [
+        "specs/009-graduation-horizon-release/spec.md"
+      ],
+      "uncertainty": "insufficient_evidence",
+      "recommended_action": "revise",
+      "rationale": "Irreducibility challenge"
+    },
+    {
+      "id": "AEE-REQ-EDUCATION-003-NEGATION-CONFLICT-CHALLE",
+      "severity": "medium",
+      "kind": "contradiction",
+      "subject": "specs/009-graduation-horizon-release/spec.md",
+      "description": "REQ-EDUCATION-003 may contradict REQ-AI-SECTORS-010",
+      "evidence_refs": [],
+      "provenance_refs": [
+        "specs/009-graduation-horizon-release/spec.md"
+      ],
+      "uncertainty": "insufficient_evidence",
+      "recommended_action": "clarify",
+      "rationale": "Negation conflict challenge"
+    },
+    {
+      "id": "AEE-REQ-IMAGING-004-PRECISION-CHALLENGE",
+      "severity": "medium",
+      "kind": "ambiguous_requirement",
+      "subject": "specs/009-graduation-horizon-release/spec.md",
+      "description": "Claim contains an undefined or non-measurable term",
+      "evidence_refs": [],
+      "provenance_refs": [
+        "specs/009-graduation-horizon-release/spec.md"
+      ],
+      "uncertainty": "insufficient_evidence",
+      "recommended_action": "clarify",
+      "rationale": "Precision challenge"
+    },
+    {
+      "id": "AEE-REQ-IMAGING-004-IRREDUCIBILITY-CHALLENGE",
+      "severity": "medium",
+      "kind": "coverage_gap",
+      "subject": "specs/009-graduation-horizon-release/spec.md",
+      "description": "Claim may contain multiple independently falsifiable propositions",
+      "evidence_refs": [],
+      "provenance_refs": [
+        "specs/009-graduation-horizon-release/spec.md"
+      ],
+      "uncertainty": "insufficient_evidence",
+      "recommended_action": "revise",
+      "rationale": "Irreducibility challenge"
+    },
+    {
+      "id": "AEE-REQ-TRANSITIONS-005-IRREDUCIBILITY-CHALLENGE",
+      "severity": "medium",
+      "kind": "coverage_gap",
+      "subject": "specs/009-graduation-horizon-release/spec.md",
+      "description": "Claim may contain multiple independently falsifiable propositions",
+      "evidence_refs": [],
+      "provenance_refs": [
+        "specs/009-graduation-horizon-release/spec.md"
+      ],
+      "uncertainty": "insufficient_evidence",
+      "recommended_action": "revise",
+      "rationale": "Irreducibility challenge"
+    },
+    {
+      "id": "AEE-REQ-LINEAGE-006-IRREDUCIBILITY-CHALLENGE",
+      "severity": "medium",
+      "kind": "coverage_gap",
+      "subject": "specs/009-graduation-horizon-release/spec.md",
+      "description": "Claim may contain multiple independently falsifiable propositions",
+      "evidence_refs": [],
+      "provenance_refs": [
+        "specs/009-graduation-horizon-release/spec.md"
+      ],
+      "uncertainty": "insufficient_evidence",
+      "recommended_action": "revise",
+      "rationale": "Irreducibility challenge"
+    },
+    {
+      "id": "AEE-REQ-ARTIFACTS-007-IRREDUCIBILITY-CHALLENGE",
+      "severity": "medium",
+      "kind": "coverage_gap",
+      "subject": "specs/009-graduation-horizon-release/spec.md",
+      "description": "Claim may contain multiple independently falsifiable propositions",
+      "evidence_refs": [],
+      "provenance_refs": [
+        "specs/009-graduation-horizon-release/spec.md"
+      ],
+      "uncertainty": "insufficient_evidence",
+      "recommended_action": "revise",
+      "rationale": "Irreducibility challenge"
+    },
+    {
+      "id": "AEE-REQ-SDD-008-IRREDUCIBILITY-CHALLENGE",
+      "severity": "medium",
+      "kind": "coverage_gap",
+      "subject": "specs/009-graduation-horizon-release/spec.md",
+      "description": "Claim may contain multiple independently falsifiable propositions",
+      "evidence_refs": [],
+      "provenance_refs": [
+        "specs/009-graduation-horizon-release/spec.md"
+      ],
+      "uncertainty": "insufficient_evidence",
+      "recommended_action": "revise",
+      "rationale": "Irreducibility challenge"
+    },
+    {
+      "id": "AEE-REQ-RELEASE-009-IRREDUCIBILITY-CHALLENGE",
+      "severity": "medium",
+      "kind": "coverage_gap",
+      "subject": "specs/009-graduation-horizon-release/spec.md",
+      "description": "Claim may contain multiple independently falsifiable propositions",
+      "evidence_refs": [],
+      "provenance_refs": [
+        "specs/009-graduation-horizon-release/spec.md"
+      ],
+      "uncertainty": "insufficient_evidence",
+      "recommended_action": "revise",
+      "rationale": "Irreducibility challenge"
+    },
+    {
+      "id": "AEE-REQ-AI-SECTORS-010-IRREDUCIBILITY-CHALLENGE",
+      "severity": "medium",
+      "kind": "coverage_gap",
+      "subject": "specs/009-graduation-horizon-release/spec.md",
+      "description": "Claim may contain multiple independently falsifiable propositions",
+      "evidence_refs": [],
+      "provenance_refs": [
+        "specs/009-graduation-horizon-release/spec.md"
+      ],
+      "uncertainty": "insufficient_evidence",
+      "recommended_action": "revise",
+      "rationale": "Irreducibility challenge"
+    }
+  ],
+  "next_action": {
+    "kind": "iterate",
+    "target_phase": "tasks",
+    "message": "Revise the current phase to address 12 finding(s)."
+  },
+  "metadata": {
+    "timestamp": "2026-09-27T02:41:28.278826Z",
+    "artifacts_evaluated": [
+      "specs/009-graduation-horizon-release/claims-initial.json"
+    ],
+    "model": null,
+    "deterministic": true,
+    "aee_methodology_version": "1.0"
+  },
+  "state": {
+    "aee": {
+      "project": "michigan-workforce-intelligence",
+      "claims": [
+        {
+          "id": "REQ-FRESHNESS-001",
+          "text": "Research information published by the September 26 cutoff; label observation, publication, retrieval, and review dates independently. Preserve unavailable and conflicting values rather than infer them.",
+          "kind": "requirement",
+          "status": "draft",
+          "boundary": [
+            "September 26 2026 edition",
+            "Michigan workforce release"
+          ],
+          "depends_on": [],
+          "conflicts_with": [],
+          "evidence": [],
+          "assumptions": [],
+          "alternatives": [],
+          "falsification_tests": [
+            "Inspection of release evidence or verification results demonstrates this requirement is unmet."
+          ],
+          "uncertainty": "insufficient_evidence",
+          "severity": "medium",
+          "source_ref": "specs/009-graduation-horizon-release/spec.md",
+          "domain": "",
+          "confidence": 0.25,
+          "confidence_band": "low",
+          "failures": [
+            {
+              "id": "AEE-REQ-FRESHNESS-001-IRREDUCIBILITY-CHALLENGE",
+              "claim_id": "REQ-FRESHNESS-001",
+              "challenge": "Irreducibility challenge",
+              "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+              "severity": "medium",
+              "category": "coverage_gap",
+              "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+              "resolved": false
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "id": "REQ-LABOR-002",
+          "text": "Cover Michigan, Macomb, Oakland, Wayne, national benchmarks, U-3/U-6, participation, employment-population ratio, involuntary part-time work, graduate underemployment, hires/quits, sentiment, and indirect demand/household indicators. Missing refreshed series must be explicit; geography and adjustment mismatches must not masquerade as comparisons.",
+          "kind": "requirement",
+          "status": "draft",
+          "boundary": [
+            "September 26 2026 edition",
+            "Michigan workforce release"
+          ],
+          "depends_on": [],
+          "conflicts_with": [],
+          "evidence": [],
+          "assumptions": [],
+          "alternatives": [],
+          "falsification_tests": [
+            "Inspection of release evidence or verification results demonstrates this requirement is unmet."
+          ],
+          "uncertainty": "insufficient_evidence",
+          "severity": "medium",
+          "source_ref": "specs/009-graduation-horizon-release/spec.md",
+          "domain": "",
+          "confidence": 0.25,
+          "confidence_band": "low",
+          "failures": [
+            {
+              "id": "AEE-REQ-LABOR-002-IRREDUCIBILITY-CHALLENGE",
+              "claim_id": "REQ-LABOR-002",
+              "challenge": "Irreducibility challenge",
+              "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+              "severity": "medium",
+              "category": "coverage_gap",
+              "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+              "resolved": false
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "id": "REQ-EDUCATION-003",
+          "text": "Provide graduation-horizon program recommendations and evidence-based redesign/conditional teach-out candidates. Do not assign an occupational extinction date without defensible evidence; distinguish projected decline, replacement openings, task change, and local demand.",
+          "kind": "requirement",
+          "status": "draft",
+          "boundary": [
+            "September 26 2026 edition",
+            "Michigan workforce release"
+          ],
+          "depends_on": [],
+          "conflicts_with": [],
+          "evidence": [],
+          "assumptions": [],
+          "alternatives": [],
+          "falsification_tests": [
+            "Inspection of release evidence or verification results demonstrates this requirement is unmet."
+          ],
+          "uncertainty": "insufficient_evidence",
+          "severity": "medium",
+          "source_ref": "specs/009-graduation-horizon-release/spec.md",
+          "domain": "",
+          "confidence": 0.25,
+          "confidence_band": "low",
+          "failures": [
+            {
+              "id": "AEE-REQ-EDUCATION-003-IRREDUCIBILITY-CHALLENGE",
+              "claim_id": "REQ-EDUCATION-003",
+              "challenge": "Irreducibility challenge",
+              "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+              "severity": "medium",
+              "category": "coverage_gap",
+              "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+              "resolved": false
+            },
+            {
+              "id": "AEE-REQ-EDUCATION-003-NEGATION-CONFLICT-CHALLE",
+              "claim_id": "REQ-EDUCATION-003",
+              "challenge": "Negation conflict challenge",
+              "breakpoint": "REQ-EDUCATION-003 may contradict REQ-AI-SECTORS-010",
+              "severity": "medium",
+              "category": "contradiction",
+              "recovery_hint": "Confirm whether the claims share a boundary and preserve both pending review.",
+              "resolved": false
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "id": "REQ-IMAGING-004",
+          "text": "Analyze radiology and AI medical imaging separately from radiologic technologists and adjacent professions; propose role-appropriate AI competencies without promising job preservation or expanded clinical privileges.",
+          "kind": "requirement",
+          "status": "draft",
+          "boundary": [
+            "September 26 2026 edition",
+            "Michigan workforce release"
+          ],
+          "depends_on": [],
+          "conflicts_with": [],
+          "evidence": [],
+          "assumptions": [],
+          "alternatives": [],
+          "falsification_tests": [
+            "Inspection of release evidence or verification results demonstrates this requirement is unmet."
+          ],
+          "uncertainty": "insufficient_evidence",
+          "severity": "medium",
+          "source_ref": "specs/009-graduation-horizon-release/spec.md",
+          "domain": "",
+          "confidence": 0.25,
+          "confidence_band": "low",
+          "failures": [
+            {
+              "id": "AEE-REQ-IMAGING-004-PRECISION-CHALLENGE",
+              "claim_id": "REQ-IMAGING-004",
+              "challenge": "Precision challenge",
+              "breakpoint": "Claim contains an undefined or non-measurable term",
+              "severity": "medium",
+              "category": "ambiguous_requirement",
+              "recovery_hint": "Replace vague language with a threshold, observable, or decision rule.",
+              "resolved": false
+            },
+            {
+              "id": "AEE-REQ-IMAGING-004-IRREDUCIBILITY-CHALLENGE",
+              "claim_id": "REQ-IMAGING-004",
+              "challenge": "Irreducibility challenge",
+              "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+              "severity": "medium",
+              "category": "coverage_gap",
+              "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+              "resolved": false
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "id": "REQ-TRANSITIONS-005",
+          "text": "Provide at least eight skills-bridge pathways, employer validation criteria, paid transition design, and measurable retention/earnings outcomes.",
+          "kind": "requirement",
+          "status": "draft",
+          "boundary": [
+            "September 26 2026 edition",
+            "Michigan workforce release"
+          ],
+          "depends_on": [],
+          "conflicts_with": [],
+          "evidence": [],
+          "assumptions": [],
+          "alternatives": [],
+          "falsification_tests": [
+            "Inspection of release evidence or verification results demonstrates this requirement is unmet."
+          ],
+          "uncertainty": "insufficient_evidence",
+          "severity": "medium",
+          "source_ref": "specs/009-graduation-horizon-release/spec.md",
+          "domain": "",
+          "confidence": 0.25,
+          "confidence_band": "low",
+          "failures": [
+            {
+              "id": "AEE-REQ-TRANSITIONS-005-IRREDUCIBILITY-CHALLENGE",
+              "claim_id": "REQ-TRANSITIONS-005",
+              "challenge": "Irreducibility challenge",
+              "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+              "severity": "medium",
+              "category": "coverage_gap",
+              "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+              "resolved": false
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "id": "REQ-LINEAGE-006",
+          "text": "Preserve source snapshots or retrieval records with hashes, parser versions, claim IDs, uncertainty, contradictions, and append-only evidence events. Clearly separate this edition's research ledger from the pre-existing application database audit.",
+          "kind": "requirement",
+          "status": "draft",
+          "boundary": [
+            "September 26 2026 edition",
+            "Michigan workforce release"
+          ],
+          "depends_on": [],
+          "conflicts_with": [],
+          "evidence": [],
+          "assumptions": [],
+          "alternatives": [],
+          "falsification_tests": [
+            "Inspection of release evidence or verification results demonstrates this requirement is unmet."
+          ],
+          "uncertainty": "insufficient_evidence",
+          "severity": "medium",
+          "source_ref": "specs/009-graduation-horizon-release/spec.md",
+          "domain": "",
+          "confidence": 0.25,
+          "confidence_band": "low",
+          "failures": [
+            {
+              "id": "AEE-REQ-LINEAGE-006-IRREDUCIBILITY-CHALLENGE",
+              "claim_id": "REQ-LINEAGE-006",
+              "challenge": "Irreducibility challenge",
+              "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+              "severity": "medium",
+              "category": "coverage_gap",
+              "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+              "resolved": false
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "id": "REQ-ARTIFACTS-007",
+          "text": "Generate a new executive brief, economic report, and continuity/education report with human-readable citations, attribution, versioned manifest/checksums, machine-readable inputs, and visual QA. Historical snapshots remain historical and are never relabeled as refreshed.",
+          "kind": "requirement",
+          "status": "draft",
+          "boundary": [
+            "September 26 2026 edition",
+            "Michigan workforce release"
+          ],
+          "depends_on": [],
+          "conflicts_with": [],
+          "evidence": [],
+          "assumptions": [],
+          "alternatives": [],
+          "falsification_tests": [
+            "Inspection of release evidence or verification results demonstrates this requirement is unmet."
+          ],
+          "uncertainty": "insufficient_evidence",
+          "severity": "medium",
+          "source_ref": "specs/009-graduation-horizon-release/spec.md",
+          "domain": "",
+          "confidence": 0.25,
+          "confidence_band": "low",
+          "failures": [
+            {
+              "id": "AEE-REQ-ARTIFACTS-007-IRREDUCIBILITY-CHALLENGE",
+              "claim_id": "REQ-ARTIFACTS-007",
+              "challenge": "Irreducibility challenge",
+              "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+              "severity": "medium",
+              "category": "coverage_gap",
+              "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+              "resolved": false
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "id": "REQ-SDD-008",
+          "text": "Use Spec Kit stages and actual AEE adapter assessment, challenge, trace, ledger verification, and gap generation. Retain failures and recovery evidence. AEE scores do not establish factual truth.",
+          "kind": "requirement",
+          "status": "draft",
+          "boundary": [
+            "September 26 2026 edition",
+            "Michigan workforce release"
+          ],
+          "depends_on": [],
+          "conflicts_with": [],
+          "evidence": [],
+          "assumptions": [],
+          "alternatives": [],
+          "falsification_tests": [
+            "Inspection of release evidence or verification results demonstrates this requirement is unmet."
+          ],
+          "uncertainty": "insufficient_evidence",
+          "severity": "medium",
+          "source_ref": "specs/009-graduation-horizon-release/spec.md",
+          "domain": "",
+          "confidence": 0.25,
+          "confidence_band": "low",
+          "failures": [
+            {
+              "id": "AEE-REQ-SDD-008-IRREDUCIBILITY-CHALLENGE",
+              "claim_id": "REQ-SDD-008",
+              "challenge": "Irreducibility challenge",
+              "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+              "severity": "medium",
+              "category": "coverage_gap",
+              "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+              "resolved": false
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "id": "REQ-RELEASE-009",
+          "text": "Run required local gates, commit authorized changes, publish a new additive release and verify downloadable assets; leave publication pending if access or required gates cannot be satisfied.",
+          "kind": "requirement",
+          "status": "draft",
+          "boundary": [
+            "September 26 2026 edition",
+            "Michigan workforce release"
+          ],
+          "depends_on": [],
+          "conflicts_with": [],
+          "evidence": [],
+          "assumptions": [],
+          "alternatives": [],
+          "falsification_tests": [
+            "Inspection of release evidence or verification results demonstrates this requirement is unmet."
+          ],
+          "uncertainty": "insufficient_evidence",
+          "severity": "medium",
+          "source_ref": "specs/009-graduation-horizon-release/spec.md",
+          "domain": "",
+          "confidence": 0.25,
+          "confidence_band": "low",
+          "failures": [
+            {
+              "id": "AEE-REQ-RELEASE-009-IRREDUCIBILITY-CHALLENGE",
+              "claim_id": "REQ-RELEASE-009",
+              "challenge": "Irreducibility challenge",
+              "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+              "severity": "medium",
+              "category": "coverage_gap",
+              "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+              "resolved": false
+            }
+          ],
+          "metadata": {}
+        },
+        {
+          "id": "REQ-AI-SECTORS-010",
+          "text": "Treat radiology as one example within a cross-sector AI task-impact matrix covering software, accounting, legal support, engineering design, administration, customer service, media, and manufacturing. For each distinguish task exposure, occupation demand, remaining human accountability, curriculum adaptation, and evidence confidence.",
+          "kind": "requirement",
+          "status": "draft",
+          "boundary": [
+            "September 26 2026 edition",
+            "Michigan workforce release"
+          ],
+          "depends_on": [],
+          "conflicts_with": [],
+          "evidence": [],
+          "assumptions": [],
+          "alternatives": [],
+          "falsification_tests": [
+            "Inspection of release evidence or verification results demonstrates this requirement is unmet."
+          ],
+          "uncertainty": "insufficient_evidence",
+          "severity": "medium",
+          "source_ref": "specs/009-graduation-horizon-release/spec.md",
+          "domain": "",
+          "confidence": 0.25,
+          "confidence_band": "low",
+          "failures": [
+            {
+              "id": "AEE-REQ-AI-SECTORS-010-IRREDUCIBILITY-CHALLENGE",
+              "claim_id": "REQ-AI-SECTORS-010",
+              "challenge": "Irreducibility challenge",
+              "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+              "severity": "medium",
+              "category": "coverage_gap",
+              "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+              "resolved": false
+            }
+          ],
+          "metadata": {}
+        }
+      ],
+      "scores": {
+        "REQ-FRESHNESS-001": {
+          "claim_id": "REQ-FRESHNESS-001",
+          "direct_score": 0.25,
+          "propagated_score": 0.25,
+          "band": "low",
+          "components": {
+            "evidence": 0.0,
+            "independence": 0.0,
+            "falsifiability": 1.0,
+            "boundary": 1.0,
+            "contradiction_penalty": 0
+          },
+          "notes": [
+            "No supporting evidence",
+            "Fewer than two independent supporting sources"
+          ]
+        },
+        "REQ-LABOR-002": {
+          "claim_id": "REQ-LABOR-002",
+          "direct_score": 0.25,
+          "propagated_score": 0.25,
+          "band": "low",
+          "components": {
+            "evidence": 0.0,
+            "independence": 0.0,
+            "falsifiability": 1.0,
+            "boundary": 1.0,
+            "contradiction_penalty": 0
+          },
+          "notes": [
+            "No supporting evidence",
+            "Fewer than two independent supporting sources"
+          ]
+        },
+        "REQ-EDUCATION-003": {
+          "claim_id": "REQ-EDUCATION-003",
+          "direct_score": 0.25,
+          "propagated_score": 0.25,
+          "band": "low",
+          "components": {
+            "evidence": 0.0,
+            "independence": 0.0,
+            "falsifiability": 1.0,
+            "boundary": 1.0,
+            "contradiction_penalty": 0
+          },
+          "notes": [
+            "No supporting evidence",
+            "Fewer than two independent supporting sources"
+          ]
+        },
+        "REQ-IMAGING-004": {
+          "claim_id": "REQ-IMAGING-004",
+          "direct_score": 0.25,
+          "propagated_score": 0.25,
+          "band": "low",
+          "components": {
+            "evidence": 0.0,
+            "independence": 0.0,
+            "falsifiability": 1.0,
+            "boundary": 1.0,
+            "contradiction_penalty": 0
+          },
+          "notes": [
+            "No supporting evidence",
+            "Fewer than two independent supporting sources"
+          ]
+        },
+        "REQ-TRANSITIONS-005": {
+          "claim_id": "REQ-TRANSITIONS-005",
+          "direct_score": 0.25,
+          "propagated_score": 0.25,
+          "band": "low",
+          "components": {
+            "evidence": 0.0,
+            "independence": 0.0,
+            "falsifiability": 1.0,
+            "boundary": 1.0,
+            "contradiction_penalty": 0
+          },
+          "notes": [
+            "No supporting evidence",
+            "Fewer than two independent supporting sources"
+          ]
+        },
+        "REQ-LINEAGE-006": {
+          "claim_id": "REQ-LINEAGE-006",
+          "direct_score": 0.25,
+          "propagated_score": 0.25,
+          "band": "low",
+          "components": {
+            "evidence": 0.0,
+            "independence": 0.0,
+            "falsifiability": 1.0,
+            "boundary": 1.0,
+            "contradiction_penalty": 0
+          },
+          "notes": [
+            "No supporting evidence",
+            "Fewer than two independent supporting sources"
+          ]
+        },
+        "REQ-ARTIFACTS-007": {
+          "claim_id": "REQ-ARTIFACTS-007",
+          "direct_score": 0.25,
+          "propagated_score": 0.25,
+          "band": "low",
+          "components": {
+            "evidence": 0.0,
+            "independence": 0.0,
+            "falsifiability": 1.0,
+            "boundary": 1.0,
+            "contradiction_penalty": 0
+          },
+          "notes": [
+            "No supporting evidence",
+            "Fewer than two independent supporting sources"
+          ]
+        },
+        "REQ-SDD-008": {
+          "claim_id": "REQ-SDD-008",
+          "direct_score": 0.25,
+          "propagated_score": 0.25,
+          "band": "low",
+          "components": {
+            "evidence": 0.0,
+            "independence": 0.0,
+            "falsifiability": 1.0,
+            "boundary": 1.0,
+            "contradiction_penalty": 0
+          },
+          "notes": [
+            "No supporting evidence",
+            "Fewer than two independent supporting sources"
+          ]
+        },
+        "REQ-RELEASE-009": {
+          "claim_id": "REQ-RELEASE-009",
+          "direct_score": 0.25,
+          "propagated_score": 0.25,
+          "band": "low",
+          "components": {
+            "evidence": 0.0,
+            "independence": 0.0,
+            "falsifiability": 1.0,
+            "boundary": 1.0,
+            "contradiction_penalty": 0
+          },
+          "notes": [
+            "No supporting evidence",
+            "Fewer than two independent supporting sources"
+          ]
+        },
+        "REQ-AI-SECTORS-010": {
+          "claim_id": "REQ-AI-SECTORS-010",
+          "direct_score": 0.25,
+          "propagated_score": 0.25,
+          "band": "low",
+          "components": {
+            "evidence": 0.0,
+            "independence": 0.0,
+            "falsifiability": 1.0,
+            "boundary": 1.0,
+            "contradiction_penalty": 0
+          },
+          "notes": [
+            "No supporting evidence",
+            "Fewer than two independent supporting sources"
+          ]
+        }
+      },
+      "recoveries": [
+        {
+          "failure_id": "AEE-REQ-AI-SECTORS-010-IRREDUCIBILITY-CHALLENGE",
+          "claim_id": "REQ-AI-SECTORS-010",
+          "strategy": "decompose",
+          "action": "Split the claim into atomic propositions and link them explicitly.",
+          "priority": 3,
+          "verification": "Every resulting claim contains one independently falsifiable proposition."
+        },
+        {
+          "failure_id": "AEE-REQ-ARTIFACTS-007-IRREDUCIBILITY-CHALLENGE",
+          "claim_id": "REQ-ARTIFACTS-007",
+          "strategy": "decompose",
+          "action": "Split the claim into atomic propositions and link them explicitly.",
+          "priority": 3,
+          "verification": "Every resulting claim contains one independently falsifiable proposition."
+        },
+        {
+          "failure_id": "AEE-REQ-EDUCATION-003-IRREDUCIBILITY-CHALLENGE",
+          "claim_id": "REQ-EDUCATION-003",
+          "strategy": "decompose",
+          "action": "Split the claim into atomic propositions and link them explicitly.",
+          "priority": 3,
+          "verification": "Every resulting claim contains one independently falsifiable proposition."
+        },
+        {
+          "failure_id": "AEE-REQ-EDUCATION-003-NEGATION-CONFLICT-CHALLE",
+          "claim_id": "REQ-EDUCATION-003",
+          "strategy": "resolve_contradiction",
+          "action": "Confirm whether the claims share a boundary and preserve both pending review.",
+          "priority": 3,
+          "verification": "Both positions remain recorded; discriminating evidence resolves or scopes them."
+        },
+        {
+          "failure_id": "AEE-REQ-FRESHNESS-001-IRREDUCIBILITY-CHALLENGE",
+          "claim_id": "REQ-FRESHNESS-001",
+          "strategy": "decompose",
+          "action": "Split the claim into atomic propositions and link them explicitly.",
+          "priority": 3,
+          "verification": "Every resulting claim contains one independently falsifiable proposition."
+        },
+        {
+          "failure_id": "AEE-REQ-IMAGING-004-IRREDUCIBILITY-CHALLENGE",
+          "claim_id": "REQ-IMAGING-004",
+          "strategy": "decompose",
+          "action": "Split the claim into atomic propositions and link them explicitly.",
+          "priority": 3,
+          "verification": "Every resulting claim contains one independently falsifiable proposition."
+        },
+        {
+          "failure_id": "AEE-REQ-IMAGING-004-PRECISION-CHALLENGE",
+          "claim_id": "REQ-IMAGING-004",
+          "strategy": "clarify",
+          "action": "Replace vague language with a threshold, observable, or decision rule.",
+          "priority": 3,
+          "verification": "The revised claim contains a measurable observable or decision rule."
+        },
+        {
+          "failure_id": "AEE-REQ-LABOR-002-IRREDUCIBILITY-CHALLENGE",
+          "claim_id": "REQ-LABOR-002",
+          "strategy": "decompose",
+          "action": "Split the claim into atomic propositions and link them explicitly.",
+          "priority": 3,
+          "verification": "Every resulting claim contains one independently falsifiable proposition."
+        },
+        {
+          "failure_id": "AEE-REQ-LINEAGE-006-IRREDUCIBILITY-CHALLENGE",
+          "claim_id": "REQ-LINEAGE-006",
+          "strategy": "decompose",
+          "action": "Split the claim into atomic propositions and link them explicitly.",
+          "priority": 3,
+          "verification": "Every resulting claim contains one independently falsifiable proposition."
+        },
+        {
+          "failure_id": "AEE-REQ-RELEASE-009-IRREDUCIBILITY-CHALLENGE",
+          "claim_id": "REQ-RELEASE-009",
+          "strategy": "decompose",
+          "action": "Split the claim into atomic propositions and link them explicitly.",
+          "priority": 3,
+          "verification": "Every resulting claim contains one independently falsifiable proposition."
+        },
+        {
+          "failure_id": "AEE-REQ-SDD-008-IRREDUCIBILITY-CHALLENGE",
+          "claim_id": "REQ-SDD-008",
+          "strategy": "decompose",
+          "action": "Split the claim into atomic propositions and link them explicitly.",
+          "priority": 3,
+          "verification": "Every resulting claim contains one independently falsifiable proposition."
+        },
+        {
+          "failure_id": "AEE-REQ-TRANSITIONS-005-IRREDUCIBILITY-CHALLENGE",
+          "claim_id": "REQ-TRANSITIONS-005",
+          "strategy": "decompose",
+          "action": "Split the claim into atomic propositions and link them explicitly.",
+          "priority": 3,
+          "verification": "Every resulting claim contains one independently falsifiable proposition."
+        }
+      ]
+    }
+  }
+}

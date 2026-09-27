@@ -26,3 +26,7 @@ Prominent source notices appear in the README and PDF opening credits, and each 
 Original software: MIT. Original report/documentation/chart content: CC BY 4.0, only to the extent the project holds those rights. See LICENSING.md for exclusions and attribution. Spec Kit scaffolding and derived instructions retain Copyright GitHub, Inc., MIT; its full notice is preserved in LICENSES/Spec-Kit-MIT.txt.
 
 PDFs embed DejaVu fonts: Copyright (c) 2003 Bitstream, Inc.; DejaVu changes are public domain. The Bitstream Vera font notice is reproduced in each PDF and LICENSES/DejaVu-fonts.txt. This font permission does not change the report license.
+
+## September 26 reviewed edition
+
+The edition cites Michigan MCDA and U.S. BLS statistical releases and projections, Federal Reserve Bank of New York graduate labor-market research, Federal Reserve Bank of Chicago district research, University of Michigan Surveys of Consumers, ACR workforce research, the AAPM/ACR/RSNA/SIIM AI education framework, FDA guidance, and NCES crosswalk documentation. Individual source URLs, retrieval dates and original-response hashes are in `reports/2026-09-26-graduation-horizons/source-registry.json`. Provider rights and terms remain applicable; original facts and limited analytical summaries do not transfer ownership of source works. Full copyrighted source pages are not included in the public report archive. No provider endorses these reports. NCES/WARN documentation does not imply that complete local crosswalks or deduplicated layoff counts were obtained.

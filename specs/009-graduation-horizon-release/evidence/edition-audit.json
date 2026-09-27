@@ -1,0 +1,12 @@
+{
+  "sources": 28,
+  "observations": 187,
+  "projection_rows": 36,
+  "ledger": {
+    "valid": true,
+    "events": 20,
+    "head_hash": "87afe0b25a6e18f31adc25f7da4aaeaba33c89e2bed0f7213299ff00334a4b5b",
+    "files": 18,
+    "scope": "public research edition only; not application database"
+  }
+}

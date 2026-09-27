@@ -20,3 +20,11 @@ The GitHub workflow is manually dispatched from committed, reviewed source. It c
 For API limits, attribution and redistribution rules, see [source policy](source-policy.md) and [third-party notices](../THIRD_PARTY_NOTICES.md). Source-specific notices apply independently of any license for original project code.
 
 To explicitly replace an older release, first build and visually review the replacement from the current clean, pushed commit, then run `python scripts/reports.py release --version YYYY.MM.DD.HHMMSSZ --replace-release reports-OLD.TIMESTAMP`. The launcher verifies the replacement manifest, commit and checksums before deleting only that GitHub release and dispatching publication. The old Git tag/history are retained. Monitor the workflow and recover publication if it fails; this is not an atomic swap. Ordinary releases do not delete older ones.
+
+## September 26 research edition
+
+`reports/current-edition.json` selects the immutable reviewed inputs. `python scripts/reviewed_evidence.py` verifies date semantics, provenance and the edition's append-only file ledger before building. This research ledger is separate from the service database ledger. Use the existing portable launcher and manual release workflow; prior release assets remain untouched.
+
+Native fallback (only when Docker is unavailable): install `.[reports]`, use `python scripts/build_reports.py --version YYYY.MM.DD.HHMMSSZ`, and set `REPORT_SOURCE_COMMIT` to the reviewed commit SHA. Record the missing Docker gate; native success is not Docker or cross-platform proof. `bash scripts/local_ci.sh` and `python -m unittest discover -s tests_portable -v` provide local evidence.
+
+The raw capture cache is keyed by SHA-256 under `tmp/research-2026-09-26`; the public register retains original URLs and hashes. A preserved private source archive permits exact projection extraction with `scripts/extract_september_release.py --cache <cache>`. Mutable source pages may change, so re-fetching a URL is not equivalent to reproducing its reviewed artifact. Public BLS JSON originals are included in the edition. AEE extension assessments, challenges, claim graphs and hash-chain ledger are retained under `.specify/extensions/aee`; feature 009 documents findings and unresolved gates.

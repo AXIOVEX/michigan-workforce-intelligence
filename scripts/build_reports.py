@@ -184,13 +184,15 @@ def footer(canvas, doc):
     canvas.drawRightString(WIDTH - 42, 23, str(doc.page))
 
 
-def pdf(path: Path, title: str, texts: list[str], charts: list[Path], stamp: str):
+def pdf(path: Path, title: str, texts: list[str], charts: list[Path], stamp: str, review_date: str = "September 13, 2026", section_breaks: bool = True):
     s = styles()
+    s["BodyText"].allowOrphans = 0
+    s["BodyText"].allowWidows = 0
     story = [
         Paragraph(title, s["Title"]),
         Spacer(1, 10),
         Paragraph(
-            "Report release " + stamp + " | Evidence review: September 13, 2026", s["BodyText"]
+            "Report release " + stamp + " | Evidence review: " + review_date, s["BodyText"]
         ),
     ]
     story.append(
@@ -203,6 +205,8 @@ def pdf(path: Path, title: str, texts: list[str], charts: list[Path], stamp: str
     if logo.exists():
         story.append(Image(str(logo), width=130, height=60, hAlign="LEFT"))
     credit = 'O*NET OnLine / National Center for O*NET Development / USDOL/ETA. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. O*NET® is a USDOL/ETA trademark. Selected wage information is adapted with project analysis; USDOL/ETA has not approved or endorsed these modifications. Original wage source: BLS. Other principal sources: BLS, Census, BEA and Michigan agencies. Full notices follow.'
+    if not section_breaks:
+        credit = 'O*NET OnLine / National Center for O*NET Development / USDOL/ETA. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. O*NET® is a USDOL/ETA trademark. No endorsement is implied. Sources for this edition include BLS, Michigan agencies, the Federal Reserve, University of Michigan and medical professional organizations. Source references accompany the text; full license notices are packaged.'
     story += [
         Paragraph(credit, s["Small"]),
         Paragraph(
@@ -215,8 +219,10 @@ def pdf(path: Path, title: str, texts: list[str], charts: list[Path], stamp: str
         story += [Image(str(chart), width=CONTENT, height=CONTENT * 0.55), PageBreak()]
     for idx, text in enumerate(texts):
         story.extend(flow(text, s))
-        if idx < len(texts) - 1:
+        if section_breaks and idx < len(texts) - 1:
             story.append(PageBreak())
+        elif idx < len(texts) - 1:
+            story.append(Spacer(1, 14))
     SimpleDocTemplate(
         str(path),
         pagesize=(WIDTH, HEIGHT),
@@ -599,6 +605,12 @@ def main():
     parser.add_argument("--version", required=True)
     args = parser.parse_args()
     stamp = version(args.version)
+    edition_config = ROOT / "reports/current-edition.json"
+    if edition_config.exists():
+        from reviewed_reports import build
+
+        build(stamp, json.loads(edition_config.read_text()))
+        return
     out = ROOT / "output/pdf" / stamp
     if out.exists():
         raise SystemExit("Version directory exists; use a new timestamp rather than overwrite")

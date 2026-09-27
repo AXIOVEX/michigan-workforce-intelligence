@@ -1,0 +1,463 @@
+{
+  "schema_version": "1.0",
+  "mode": "challenge",
+  "project": "michigan-workforce-intelligence",
+  "phase": "after_implement",
+  "outcome": "gather_evidence",
+  "summary": "Assessed 11 claim(s); found 25 failure mode(s); 10 claim(s) below the 0.70 confidence threshold.",
+  "created_at": "2026-09-27T03:04:39.442540Z",
+  "failures": [
+    {
+      "id": "AEE-REQ-FRESHNESS-001-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-FRESHNESS-001",
+      "challenge": "Irreducibility challenge",
+      "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+      "severity": "medium",
+      "category": "coverage_gap",
+      "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-FRESHNESS-001-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-FRESHNESS-001",
+      "challenge": "Independent-evidence challenge",
+      "breakpoint": "Only model self-attestation supports the claim",
+      "severity": "high",
+      "category": "unverified_assertion",
+      "recovery_hint": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-FRESHNESS-001-NEGATION-CONFLICT-CHALLE",
+      "claim_id": "REQ-FRESHNESS-001",
+      "challenge": "Negation conflict challenge",
+      "breakpoint": "REQ-FRESHNESS-001 may contradict REQ-CORROBORATION-011",
+      "severity": "medium",
+      "category": "contradiction",
+      "recovery_hint": "Confirm whether the claims share a boundary and preserve both pending review.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-LABOR-002-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-LABOR-002",
+      "challenge": "Irreducibility challenge",
+      "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+      "severity": "medium",
+      "category": "coverage_gap",
+      "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-LABOR-002-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-LABOR-002",
+      "challenge": "Independent-evidence challenge",
+      "breakpoint": "Only model self-attestation supports the claim",
+      "severity": "high",
+      "category": "unverified_assertion",
+      "recovery_hint": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-EDUCATION-003-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-EDUCATION-003",
+      "challenge": "Irreducibility challenge",
+      "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+      "severity": "medium",
+      "category": "coverage_gap",
+      "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-EDUCATION-003-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-EDUCATION-003",
+      "challenge": "Independent-evidence challenge",
+      "breakpoint": "Only model self-attestation supports the claim",
+      "severity": "high",
+      "category": "unverified_assertion",
+      "recovery_hint": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-EDUCATION-003-NEGATION-CONFLICT-CHALLE",
+      "claim_id": "REQ-EDUCATION-003",
+      "challenge": "Negation conflict challenge",
+      "breakpoint": "REQ-EDUCATION-003 may contradict REQ-AI-SECTORS-010",
+      "severity": "medium",
+      "category": "contradiction",
+      "recovery_hint": "Confirm whether the claims share a boundary and preserve both pending review.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-IMAGING-004-PRECISION-CHALLENGE",
+      "claim_id": "REQ-IMAGING-004",
+      "challenge": "Precision challenge",
+      "breakpoint": "Claim contains an undefined or non-measurable term",
+      "severity": "medium",
+      "category": "ambiguous_requirement",
+      "recovery_hint": "Replace vague language with a threshold, observable, or decision rule.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-IMAGING-004-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-IMAGING-004",
+      "challenge": "Irreducibility challenge",
+      "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+      "severity": "medium",
+      "category": "coverage_gap",
+      "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-IMAGING-004-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-IMAGING-004",
+      "challenge": "Independent-evidence challenge",
+      "breakpoint": "Only model self-attestation supports the claim",
+      "severity": "high",
+      "category": "unverified_assertion",
+      "recovery_hint": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-TRANSITIONS-005-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-TRANSITIONS-005",
+      "challenge": "Irreducibility challenge",
+      "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+      "severity": "medium",
+      "category": "coverage_gap",
+      "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-TRANSITIONS-005-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-TRANSITIONS-005",
+      "challenge": "Independent-evidence challenge",
+      "breakpoint": "Only model self-attestation supports the claim",
+      "severity": "high",
+      "category": "unverified_assertion",
+      "recovery_hint": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-LINEAGE-006-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-LINEAGE-006",
+      "challenge": "Irreducibility challenge",
+      "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+      "severity": "medium",
+      "category": "coverage_gap",
+      "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-LINEAGE-006-NEGATION-CONFLICT-CHALLE",
+      "claim_id": "REQ-LINEAGE-006",
+      "challenge": "Negation conflict challenge",
+      "breakpoint": "REQ-LINEAGE-006 may contradict REQ-CORROBORATION-011",
+      "severity": "medium",
+      "category": "contradiction",
+      "recovery_hint": "Confirm whether the claims share a boundary and preserve both pending review.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-ARTIFACTS-007-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-ARTIFACTS-007",
+      "challenge": "Irreducibility challenge",
+      "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+      "severity": "medium",
+      "category": "coverage_gap",
+      "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-ARTIFACTS-007-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-ARTIFACTS-007",
+      "challenge": "Independent-evidence challenge",
+      "breakpoint": "Only model self-attestation supports the claim",
+      "severity": "high",
+      "category": "unverified_assertion",
+      "recovery_hint": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-SDD-008-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-SDD-008",
+      "challenge": "Irreducibility challenge",
+      "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+      "severity": "medium",
+      "category": "coverage_gap",
+      "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-SDD-008-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-SDD-008",
+      "challenge": "Independent-evidence challenge",
+      "breakpoint": "Only model self-attestation supports the claim",
+      "severity": "high",
+      "category": "unverified_assertion",
+      "recovery_hint": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-RELEASE-009-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-RELEASE-009",
+      "challenge": "Irreducibility challenge",
+      "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+      "severity": "medium",
+      "category": "coverage_gap",
+      "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-AI-SECTORS-010-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-AI-SECTORS-010",
+      "challenge": "Irreducibility challenge",
+      "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+      "severity": "medium",
+      "category": "coverage_gap",
+      "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-AI-SECTORS-010-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-AI-SECTORS-010",
+      "challenge": "Independent-evidence challenge",
+      "breakpoint": "Only model self-attestation supports the claim",
+      "severity": "high",
+      "category": "unverified_assertion",
+      "recovery_hint": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-AI-SECTORS-010-NEGATION-CONFLICT-CHALLE",
+      "claim_id": "REQ-AI-SECTORS-010",
+      "challenge": "Negation conflict challenge",
+      "breakpoint": "REQ-AI-SECTORS-010 may contradict REQ-CORROBORATION-011",
+      "severity": "medium",
+      "category": "contradiction",
+      "recovery_hint": "Confirm whether the claims share a boundary and preserve both pending review.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-CORROBORATION-011-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-CORROBORATION-011",
+      "challenge": "Irreducibility challenge",
+      "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+      "severity": "medium",
+      "category": "coverage_gap",
+      "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-CORROBORATION-011-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-CORROBORATION-011",
+      "challenge": "Independent-evidence challenge",
+      "breakpoint": "Only model self-attestation supports the claim",
+      "severity": "high",
+      "category": "unverified_assertion",
+      "recovery_hint": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "resolved": false
+    }
+  ],
+  "recoveries": [
+    {
+      "failure_id": "AEE-REQ-AI-SECTORS-010-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-AI-SECTORS-010",
+      "strategy": "gather_evidence",
+      "action": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "priority": 2,
+      "verification": "At least one inspectable non-self-attested evidence item is attached."
+    },
+    {
+      "failure_id": "AEE-REQ-ARTIFACTS-007-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-ARTIFACTS-007",
+      "strategy": "gather_evidence",
+      "action": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "priority": 2,
+      "verification": "At least one inspectable non-self-attested evidence item is attached."
+    },
+    {
+      "failure_id": "AEE-REQ-CORROBORATION-011-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-CORROBORATION-011",
+      "strategy": "gather_evidence",
+      "action": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "priority": 2,
+      "verification": "At least one inspectable non-self-attested evidence item is attached."
+    },
+    {
+      "failure_id": "AEE-REQ-EDUCATION-003-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-EDUCATION-003",
+      "strategy": "gather_evidence",
+      "action": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "priority": 2,
+      "verification": "At least one inspectable non-self-attested evidence item is attached."
+    },
+    {
+      "failure_id": "AEE-REQ-FRESHNESS-001-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-FRESHNESS-001",
+      "strategy": "gather_evidence",
+      "action": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "priority": 2,
+      "verification": "At least one inspectable non-self-attested evidence item is attached."
+    },
+    {
+      "failure_id": "AEE-REQ-IMAGING-004-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-IMAGING-004",
+      "strategy": "gather_evidence",
+      "action": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "priority": 2,
+      "verification": "At least one inspectable non-self-attested evidence item is attached."
+    },
+    {
+      "failure_id": "AEE-REQ-LABOR-002-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-LABOR-002",
+      "strategy": "gather_evidence",
+      "action": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "priority": 2,
+      "verification": "At least one inspectable non-self-attested evidence item is attached."
+    },
+    {
+      "failure_id": "AEE-REQ-SDD-008-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-SDD-008",
+      "strategy": "gather_evidence",
+      "action": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "priority": 2,
+      "verification": "At least one inspectable non-self-attested evidence item is attached."
+    },
+    {
+      "failure_id": "AEE-REQ-TRANSITIONS-005-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-TRANSITIONS-005",
+      "strategy": "gather_evidence",
+      "action": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "priority": 2,
+      "verification": "At least one inspectable non-self-attested evidence item is attached."
+    },
+    {
+      "failure_id": "AEE-REQ-AI-SECTORS-010-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-AI-SECTORS-010",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    },
+    {
+      "failure_id": "AEE-REQ-AI-SECTORS-010-NEGATION-CONFLICT-CHALLE",
+      "claim_id": "REQ-AI-SECTORS-010",
+      "strategy": "resolve_contradiction",
+      "action": "Confirm whether the claims share a boundary and preserve both pending review.",
+      "priority": 3,
+      "verification": "Both positions remain recorded; discriminating evidence resolves or scopes them."
+    },
+    {
+      "failure_id": "AEE-REQ-ARTIFACTS-007-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-ARTIFACTS-007",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    },
+    {
+      "failure_id": "AEE-REQ-CORROBORATION-011-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-CORROBORATION-011",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    },
+    {
+      "failure_id": "AEE-REQ-EDUCATION-003-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-EDUCATION-003",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    },
+    {
+      "failure_id": "AEE-REQ-EDUCATION-003-NEGATION-CONFLICT-CHALLE",
+      "claim_id": "REQ-EDUCATION-003",
+      "strategy": "resolve_contradiction",
+      "action": "Confirm whether the claims share a boundary and preserve both pending review.",
+      "priority": 3,
+      "verification": "Both positions remain recorded; discriminating evidence resolves or scopes them."
+    },
+    {
+      "failure_id": "AEE-REQ-FRESHNESS-001-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-FRESHNESS-001",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    },
+    {
+      "failure_id": "AEE-REQ-FRESHNESS-001-NEGATION-CONFLICT-CHALLE",
+      "claim_id": "REQ-FRESHNESS-001",
+      "strategy": "resolve_contradiction",
+      "action": "Confirm whether the claims share a boundary and preserve both pending review.",
+      "priority": 3,
+      "verification": "Both positions remain recorded; discriminating evidence resolves or scopes them."
+    },
+    {
+      "failure_id": "AEE-REQ-IMAGING-004-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-IMAGING-004",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    },
+    {
+      "failure_id": "AEE-REQ-IMAGING-004-PRECISION-CHALLENGE",
+      "claim_id": "REQ-IMAGING-004",
+      "strategy": "clarify",
+      "action": "Replace vague language with a threshold, observable, or decision rule.",
+      "priority": 3,
+      "verification": "The revised claim contains a measurable observable or decision rule."
+    },
+    {
+      "failure_id": "AEE-REQ-LABOR-002-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-LABOR-002",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    },
+    {
+      "failure_id": "AEE-REQ-LINEAGE-006-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-LINEAGE-006",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    },
+    {
+      "failure_id": "AEE-REQ-LINEAGE-006-NEGATION-CONFLICT-CHALLE",
+      "claim_id": "REQ-LINEAGE-006",
+      "strategy": "resolve_contradiction",
+      "action": "Confirm whether the claims share a boundary and preserve both pending review.",
+      "priority": 3,
+      "verification": "Both positions remain recorded; discriminating evidence resolves or scopes them."
+    },
+    {
+      "failure_id": "AEE-REQ-RELEASE-009-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-RELEASE-009",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    },
+    {
+      "failure_id": "AEE-REQ-SDD-008-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-SDD-008",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    },
+    {
+      "failure_id": "AEE-REQ-TRANSITIONS-005-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-TRANSITIONS-005",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    }
+  ]
+}

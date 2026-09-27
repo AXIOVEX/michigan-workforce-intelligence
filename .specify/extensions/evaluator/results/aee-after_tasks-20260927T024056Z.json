@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "evaluator": {
+    "id": "aee",
+    "version": "1.0.0",
+    "name": "Applied Epistemic Engineering",
+    "url": "https://github.com/electrohire/spec-kit-aee"
+  },
+  "phase": "after_tasks",
+  "outcome": "pass",
+  "summary": "Assessed 0 claim(s); found 0 failure mode(s); 0 claim(s) below the 0.70 confidence threshold.",
+  "findings": [],
+  "next_action": {
+    "kind": "pass",
+    "target_phase": null,
+    "message": "No epistemic blockers found; continue to the next phase."
+  },
+  "metadata": {
+    "timestamp": "2026-09-27T02:40:56.684578Z",
+    "artifacts_evaluated": [
+      "specs/009-graduation-horizon-release/tasks.md"
+    ],
+    "model": null,
+    "deterministic": true,
+    "aee_methodology_version": "1.0"
+  },
+  "state": {
+    "aee": {
+      "project": "michigan-workforce-intelligence",
+      "claims": [],
+      "scores": {},
+      "recoveries": []
+    }
+  }
+}

@@ -2,7 +2,9 @@
 
 Evidence-backed Michigan jobs analysis and a local job-continuity pilot. The public evidence service combines official aggregate data, versioned observations, source artifacts, an audited ledger, deterministic analysis and MCP access. Reports cover Macomb, Oakland and Wayne counties and Michigan, with U.S., Ohio, California, Texas and Florida benchmarks and additional interstate earnings/price comparisons.
 
-[Download report releases](https://github.com/AXIOVEX/michigan-workforce-intelligence/releases/latest) · [Report sources and findings](reports/2026-09-13-job-continuity/README.md) · [Data credits](THIRD_PARTY_NOTICES.md)
+[Download report releases](https://github.com/AXIOVEX/michigan-workforce-intelligence/releases/latest) · [Report sources and findings](reports/2026-09-26-graduation-horizons/README.md) · [Data credits](THIRD_PARTY_NOTICES.md)
+
+The September 26 reviewed edition adds 187 observations, 36 selected state/regional occupation projection rows, graduation-horizon program planning, cross-sector AI task impacts and 12 skills bridges. Its 28-source register distinguishes official observations, projections, proposals and unavailable inputs. The application database has not been refreshed by this offline research edition. See [SDD and verification](specs/009-graduation-horizon-release/verification-matrix.md).
 
 ## Ask naturally
 
@@ -64,7 +66,7 @@ The exchange exposes three authenticated read-only tools at `http://127.0.0.1:80
 
 ## Evidence and queries
 
-The latest scripted snapshot verifies **3,727 observation versions, 55 raw artifact hashes, 9,572 ledger events and 33 configured monthly series**. Exact periods, units, adjustment, nulls and observation/artifact IDs are in [analysis-snapshot.json](reports/2026-09-13-job-continuity/analysis-snapshot.json). Integrity checks establish provenance, not statistical accuracy or current employer demand.
+The historical September 13 application snapshot verifies **3,727 observation versions, 55 raw artifact hashes, 9,572 ledger events and 33 configured monthly series**. Exact periods, units, adjustment, nulls and observation/artifact IDs are in [analysis-snapshot.json](reports/2026-09-13-job-continuity/analysis-snapshot.json). Integrity checks establish provenance, not statistical accuracy or current employer demand.
 
 | MCP tool / evidence | Appropriate use and limits |
 | --- | --- |

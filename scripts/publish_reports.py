@@ -41,7 +41,7 @@ def main() -> None:
             raise ValueError(f"Checksum mismatch: {name}")
     notes = directory / "release-notes.md"
     notes.write_text(
-        "Michigan county/state jobs and economic report, with supplemental job continuity and Job Corps proposals.\n\nEvidence reviewed September 13, 2026; observation periods and limitations appear in each report. APEX, Velocity and all educational institutions are candidates only, not represented or committed participants. The employer exchange is a separate local aggregate pilot; no confidential records are included.\n\nOriginal software: MIT. Original reports and charts: CC BY 4.0. Source data retain provider terms; license texts and scope are packaged. Data credits and O*NET attribution are included in every PDF and the package. See THIRD_PARTY_NOTICES.md in the repository.\n",
+        "Michigan workforce reports: " + manifest.get("description", "jobs, economic conditions and job continuity") + "\n\nEvidence reviewed " + manifest["evidence_review_date"] + "; actual observation periods, coverage gaps and limitations appear in each report. All educational institutions and employer pathways are candidates/proposals, not committed participants. No confidential records are included.\n\nOriginal software: MIT. Original reports and charts: CC BY 4.0. Source data retain provider terms; license texts and source credits are packaged. See THIRD_PARTY_NOTICES.md in the repository.\n",
         encoding="utf-8",
     )
     subprocess.run(

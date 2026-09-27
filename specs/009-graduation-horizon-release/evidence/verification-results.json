@@ -1,0 +1,55 @@
+{
+  "scope": "Inspection results establish completion of the named check, not independent confirmation of all substantive recommendations. Native and source validation logs are separate.",
+  "results": [
+    {
+      "test_id": "T-DATE-001",
+      "status": "pass",
+      "evidence": "native-ci.log; edition-audit.json"
+    },
+    {
+      "test_id": "T-LABOR-002",
+      "status": "pass",
+      "evidence": "validation.md and report/source files; model-authored review"
+    },
+    {
+      "test_id": "T-EDU-003",
+      "status": "pass",
+      "evidence": "validation.md and report/source files; model-authored review"
+    },
+    {
+      "test_id": "T-IMAGE-004",
+      "status": "pass",
+      "evidence": "validation.md and report/source files; model-authored review"
+    },
+    {
+      "test_id": "T-BRIDGE-005",
+      "status": "pass",
+      "evidence": "validation.md and report/source files; model-authored review"
+    },
+    {
+      "test_id": "T-HASH-006",
+      "status": "pass",
+      "evidence": "native-ci.log; edition-audit.json"
+    },
+    {
+      "test_id": "T-PDF-007",
+      "status": "pass",
+      "evidence": "validation.md and report/source files; model-authored review"
+    },
+    {
+      "test_id": "T-SDD-008",
+      "status": "pass",
+      "evidence": "validation.md and report/source files; model-authored review"
+    },
+    {
+      "test_id": "T-AI-010",
+      "status": "pass",
+      "evidence": "validation.md and report/source files; model-authored review"
+    },
+    {
+      "test_id": "T-SOURCE-011",
+      "status": "pass",
+      "evidence": "validation.md and report/source files; model-authored review"
+    }
+  ]
+}
