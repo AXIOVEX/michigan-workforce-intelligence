@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "mode": "challenge",
+  "project": "michigan-workforce-intelligence",
+  "phase": "after_implement",
+  "outcome": "gather_evidence",
+  "summary": "Assessed 4 claim(s); found 3 failure mode(s); 3 claim(s) below the 0.70 confidence threshold.",
+  "created_at": "2026-09-27T13:10:14.576031Z",
+  "failures": [
+    {
+      "id": "AEE-REQ-RELEASE-002-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-RELEASE-002",
+      "challenge": "Irreducibility challenge",
+      "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+      "severity": "medium",
+      "category": "coverage_gap",
+      "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-RELEASE-003-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-RELEASE-003",
+      "challenge": "Irreducibility challenge",
+      "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+      "severity": "medium",
+      "category": "coverage_gap",
+      "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+      "resolved": false
+    },
+    {
+      "id": "AEE-REQ-RELEASE-003-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-RELEASE-003",
+      "challenge": "Independent-evidence challenge",
+      "breakpoint": "Only model self-attestation supports the claim",
+      "severity": "high",
+      "category": "unverified_assertion",
+      "recovery_hint": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "resolved": false
+    }
+  ],
+  "recoveries": [
+    {
+      "failure_id": "AEE-REQ-RELEASE-003-INDEPENDENT-EVIDENCE-CHA",
+      "claim_id": "REQ-RELEASE-003",
+      "strategy": "gather_evidence",
+      "action": "Obtain evidence from a test, artifact, primary source, or human observation.",
+      "priority": 2,
+      "verification": "At least one inspectable non-self-attested evidence item is attached."
+    },
+    {
+      "failure_id": "AEE-REQ-RELEASE-002-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-RELEASE-002",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    },
+    {
+      "failure_id": "AEE-REQ-RELEASE-003-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-RELEASE-003",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "claims": [
+    {
+      "id": "REQ-RELEASE-001",
+      "text": "A request-only main commit can start report publication through the connected GitHub account.",
+      "kind": "requirement",
+      "status": "draft",
+      "boundary": [
+        "AXIOVEX/michigan-workforce-intelligence report workflow"
+      ],
+      "falsification_tests": [
+        "A targeted validation test or remote workflow contradicts this claim."
+      ],
+      "evidence": []
+    },
+    {
+      "id": "REQ-RELEASE-002",
+      "text": "The resolver rejects invalid versions, stale source SHAs, other refs and mixed commits.",
+      "kind": "requirement",
+      "status": "draft",
+      "boundary": [
+        "AXIOVEX/michigan-workforce-intelligence report workflow"
+      ],
+      "falsification_tests": [
+        "A targeted validation test or remote workflow contradicts this claim."
+      ],
+      "evidence": []
+    },
+    {
+      "id": "REQ-RELEASE-003",
+      "text": "Publication requires all existing portable, Docker report and checksum gates.",
+      "kind": "requirement",
+      "status": "draft",
+      "boundary": [
+        "AXIOVEX/michigan-workforce-intelligence report workflow"
+      ],
+      "falsification_tests": [
+        "A targeted validation test or remote workflow contradicts this claim."
+      ],
+      "evidence": []
+    },
+    {
+      "id": "REQ-RELEASE-004",
+      "text": "Downloaded release asset hashes match the published checksum file.",
+      "kind": "requirement",
+      "status": "draft",
+      "boundary": [
+        "AXIOVEX/michigan-workforce-intelligence report workflow"
+      ],
+      "falsification_tests": [
+        "A targeted validation test or remote workflow contradicts this claim."
+      ],
+      "evidence": []
+    }
+  ]
+}

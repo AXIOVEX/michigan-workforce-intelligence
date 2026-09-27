@@ -1,5 +1,8 @@
 name: Reviewed workforce reports
 on:
+  push:
+    branches: [main]
+    paths: [release/request.json]
   workflow_dispatch:
     inputs:
       version:
@@ -9,10 +12,26 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: reports-${{ inputs.version }}
+  group: reviewed-workforce-report-publication
   cancel-in-progress: false
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.request.outputs.version }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - id: request
+        env:
+          REQUESTED_VERSION: ${{ inputs.version }}
+        run: python scripts/release_request.py resolve
   portable:
+    needs: prepare
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
@@ -24,10 +43,10 @@ jobs:
           python-version: '3.12'
       - run: python -m unittest discover -s tests_portable -v
   build:
-    needs: portable
+    needs: [prepare, portable]
     runs-on: ubuntu-latest
     env:
-      REPORT_VERSION: ${{ inputs.version }}
+      REPORT_VERSION: ${{ needs.prepare.outputs.version }}
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
@@ -38,16 +57,16 @@ jobs:
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: reviewed-reports
-          path: output/pdf/${{ inputs.version }}/*
+          path: output/pdf/${{ needs.prepare.outputs.version }}/*
           if-no-files-found: error
           retention-days: 14
   publish:
-    needs: build
+    needs: [prepare, build]
     runs-on: ubuntu-latest
     permissions:
       contents: write
     env:
-      REPORT_VERSION: ${{ inputs.version }}
+      REPORT_VERSION: ${{ needs.prepare.outputs.version }}
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262

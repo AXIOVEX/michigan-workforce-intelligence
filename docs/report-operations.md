@@ -28,3 +28,18 @@ To explicitly replace an older release, first build and visually review the repl
 Native fallback (only when Docker is unavailable): install `.[reports]`, use `python scripts/build_reports.py --version YYYY.MM.DD.HHMMSSZ`, and set `REPORT_SOURCE_COMMIT` to the reviewed commit SHA. Record the missing Docker gate; native success is not Docker or cross-platform proof. `bash scripts/local_ci.sh` and `python -m unittest discover -s tests_portable -v` provide local evidence.
 
 The raw capture cache is keyed by SHA-256 under `tmp/research-2026-09-26`; the public register retains original URLs and hashes. A preserved private source archive permits exact projection extraction with `scripts/extract_september_release.py --cache <cache>`. Mutable source pages may change, so re-fetching a URL is not equivalent to reproducing its reviewed artifact. Public BLS JSON originals are included in the edition. AEE extension assessments, challenges, claim graphs and hash-chain ledger are retained under `.specify/extensions/aee`; feature 009 documents findings and unresolved gates.
+
+
+## Connector-compatible release requests (spec 010)
+
+When workflow dispatch is unavailable in an authenticated connector, use the native push trigger. This is an explicit release action, not an automatic release on ordinary source edits.
+
+1. Finish and validate all source changes; commit them to main. Verify its current SHA.
+2. With a clean local main checkout, run `python scripts/release_request.py prepare --version YYYY.MM.DD.HHMMSSZ`. Alternatively, through the GitHub connector, write `release/request.json` containing exactly `{"version":"YYYY.MM.DD.HHMMSSZ","reviewed_source_commit":"<current main SHA>"}`.
+3. Commit only that request file against the verified main parent, then fast-forward main. Use connector create_tree/create_commit/update_ref, or create_file/update_file for this single file. Never force the branch. A concurrent main change means re-read/review and recreate the request.
+4. The `Reviewed workforce reports` workflow validates the parent/ref/diff and runs portable tests on Linux, Windows and macOS, then builds reports in Docker and publishes checksum-validated assets. The manifest identifies the request commit: its report source files are identical to the reviewed parent.
+5. Read `/repos/AXIOVEX/michigan-workforce-intelligence/actions/runs` and the run's jobs. After success, download the release assets and verify SHA256SUMS plus manifest source commit/version. Keep the run URL and verification result in the active feature evidence.
+
+Ordinary commits do not publish. Manual `python scripts/reports.py release --version ...` with authenticated gh remains available. Do not rerun a prior successful release to publish new sources: a rerun retains its original commit and inputs. Do not delete existing releases to resolve collisions. Fix a failed build and submit a fresh request/version, or retry failed jobs when the source does not need changing.
+
+Required rights: the initial workflow edit requires GitHub workflow write authorization; subsequent requests require ordinary repository content writes to main. Only the publish job receives contents:write. No browser, personal token copied into the workspace, branch-protection change or new repository secret is required by this path. GitHub's native push event support: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows

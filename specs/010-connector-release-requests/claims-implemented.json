@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "claims": [
+    {
+      "id": "REQ-RELEASE-001",
+      "text": "A request-only main commit can start report publication through the connected GitHub account.",
+      "kind": "requirement",
+      "status": "draft",
+      "boundary": [
+        "AXIOVEX/michigan-workforce-intelligence report workflow"
+      ],
+      "falsification_tests": [
+        "A targeted validation test or remote workflow contradicts this claim."
+      ],
+      "evidence": []
+    },
+    {
+      "id": "REQ-RELEASE-002",
+      "text": "The resolver rejects invalid versions, stale source SHAs, other refs and mixed commits.",
+      "kind": "requirement",
+      "status": "draft",
+      "boundary": [
+        "AXIOVEX/michigan-workforce-intelligence report workflow"
+      ],
+      "falsification_tests": [
+        "A targeted validation test or remote workflow contradicts this claim."
+      ],
+      "evidence": [
+        {
+          "kind": "observed",
+          "direction": "supports",
+          "source_quality": "test",
+          "ref": "specs/010-connector-release-requests/evidence/portable-linux.log",
+          "description": "Executed admission boundary tests passed.",
+          "content_hash": "2c5b21bd9cffeac29b414d798479da683e762ae71c93a84bb31cfc0a89ba2460"
+        }
+      ]
+    },
+    {
+      "id": "REQ-RELEASE-003",
+      "text": "Publication requires all existing portable, Docker report and checksum gates.",
+      "kind": "requirement",
+      "status": "draft",
+      "boundary": [
+        "AXIOVEX/michigan-workforce-intelligence report workflow"
+      ],
+      "falsification_tests": [
+        "A targeted validation test or remote workflow contradicts this claim."
+      ],
+      "evidence": [
+        {
+          "kind": "asserted",
+          "direction": "supports",
+          "source_quality": "model",
+          "ref": ".github/workflows/reports-release.yml",
+          "description": "Workflow dependency and permission inspection; remote execution still pending.",
+          "content_hash": "2068c8830a3c948d900ea442d914447bf48d29747912995971746f40441cfd1a"
+        }
+      ]
+    },
+    {
+      "id": "REQ-RELEASE-004",
+      "text": "Downloaded release asset hashes match the published checksum file.",
+      "kind": "requirement",
+      "status": "draft",
+      "boundary": [
+        "AXIOVEX/michigan-workforce-intelligence report workflow"
+      ],
+      "falsification_tests": [
+        "A targeted validation test or remote workflow contradicts this claim."
+      ],
+      "evidence": []
+    }
+  ]
+}

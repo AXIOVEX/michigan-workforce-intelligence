@@ -65,3 +65,5 @@ A task is not done until tests cover happy path, boundary conditions, invalid in
 The user authorized a manual GitHub report-release workflow and Linux/Windows/macOS launcher validation on 2026-09-13 (spec 006). This scoped release automation may publish reviewed reports; it does not replace the local application gate or authorize uploading live database volumes, credentials or private participant data.
 
 @RTK.md
+
+On 2026-09-27 the user authorized connector-compatible report release requests (spec 010). If the connector lacks workflow_dispatch, follow docs/report-operations.md and scripts/release_request.py: commit only release/request.json on main after reviewed sources, then monitor and verify the release. Do not stop at missing gh/dispatch when this path is available.

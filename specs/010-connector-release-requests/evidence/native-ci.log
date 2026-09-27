@@ -1,0 +1,67 @@
+[1/7] governance
+governance artifacts valid
+[2/7] compile
+[3/7] unit tests + coverage
+........................................................................ [ 27%]
+........................................................................ [ 54%]
+........................................................................ [ 82%]
+...............................................                          [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.14-final-0 _______________
+
+Name                                      Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------------
+src/mijobs/__init__.py                        1      0   100%
+src/mijobs/analytics/__init__.py              4      0   100%
+src/mijobs/analytics/gaps.py                 72      4    94%   41, 84, 130, 140
+src/mijobs/analytics/policy.py               65      0   100%
+src/mijobs/analytics/quality.py              24      0   100%
+src/mijobs/analytics/university.py          299     16    95%   354, 395, 409, 413, 422, 445-446, 456-457, 474, 593, 595, 598, 628, 630, 633
+src/mijobs/artifact_store.py                 37      2    95%   25, 34
+src/mijobs/canonical.py                      53      1    98%   21
+src/mijobs/cli.py                           104     33    68%   33, 53, 86-103, 133-142, 148-155, 159
+src/mijobs/config.py                         64      2    97%   88, 99
+src/mijobs/db.py                             36      0   100%
+src/mijobs/domain.py                         72      0   100%
+src/mijobs/economic_context.py               23      0   100%
+src/mijobs/epistemics.py                     54      5    91%   39, 77, 79-81
+src/mijobs/exchange/__init__.py               0      0   100%
+src/mijobs/exchange/app.py                  145      8    94%   41, 191-192, 255-262, 266
+src/mijobs/exchange/service.py              145      1    99%   99
+src/mijobs/exchange/store.py                109      0   100%
+src/mijobs/harvest.py                       182     33    82%   79, 195-196, 205-212, 226-228, 260-265, 270-272, 277-289, 297-308, 329, 331
+src/mijobs/healthcheck.py                    16      3    81%   28-29, 33
+src/mijobs/ingestion.py                      27      0   100%
+src/mijobs/insights_report.py               215      7    97%   105, 110, 325, 492, 547, 560, 564
+src/mijobs/ledger.py                         72      3    96%   116, 124, 156
+src/mijobs/manager.py                       127      9    93%   75-76, 102, 107, 122, 170, 172-173, 177
+src/mijobs/mcp_server.py                    114     11    90%   28-29, 52, 57, 170, 175, 180, 185, 190, 195, 255
+src/mijobs/mcp_service.py                   214     73    66%   82, 84, 86, 132, 134, 186, 188, 219, 309-356, 363-409, 421-437, 449-473, 482-527, 531
+src/mijobs/models.py                        134      0   100%
+src/mijobs/outlook.py                        50      4    92%   22-23, 28, 39
+src/mijobs/reporting.py                      17      1    94%   21
+src/mijobs/repository.py                    121     17    86%   187, 264, 402, 448, 483, 523, 539-554, 557
+src/mijobs/sources/__init__.py                9      0   100%
+src/mijobs/sources/base.py                   22      1    95%   30
+src/mijobs/sources/bls.py                    80      2    98%   57-58
+src/mijobs/sources/census.py                101      6    94%   61, 133, 137-138, 172, 175
+src/mijobs/sources/crosswalks.py             64      5    92%   44, 89-90, 98, 104
+src/mijobs/sources/http_policy.py            72      1    99%   99
+src/mijobs/sources/institutions.py           27      1    96%   24
+src/mijobs/sources/ipeds.py                 166     18    89%   57-58, 62, 110, 170, 221, 223, 317, 327-328, 342, 346-347, 354-355, 358, 364, 373
+src/mijobs/sources/michigan_xlsx.py          95      7    93%   25, 31-32, 125, 129, 259, 263
+src/mijobs/sources/official_artifact.py      32      1    97%   35
+src/mijobs/sources/onet.py                   99     16    84%   54-55, 78, 84-85, 87, 93, 97-98, 104, 151, 154, 157-158, 160, 165
+src/mijobs/university_reports.py             92      1    99%   89
+-----------------------------------------------------------------------
+TOTAL                                      3455    292    92%
+Required test coverage of 90% reached. Total coverage: 91.55%
+[4/7] source registry
+source catalog valid: 30 reviewed source families
+[5/7] spec traceability
+spec traceability valid: 88 FR/ER requirements mapped across all features
+[6/7] lint
+All checks passed!
+[7/7] typecheck
+Success: no issues found in 43 source files
+local CI passed

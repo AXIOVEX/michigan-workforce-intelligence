@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0",
+  "methodology_version": "1.0",
+  "project": "michigan-workforce-intelligence",
+  "phase": "after_plan",
+  "outcome": "iterate",
+  "summary": "Assessed 4 claim(s); found 2 failure mode(s); 4 claim(s) below the 0.70 confidence threshold.",
+  "created_at": "2026-09-27T13:09:04.477459Z",
+  "claims": [
+    {
+      "id": "REQ-RELEASE-001",
+      "text": "A request-only main commit can start report publication through the connected GitHub account.",
+      "kind": "requirement",
+      "status": "draft",
+      "boundary": [
+        "AXIOVEX/michigan-workforce-intelligence report workflow"
+      ],
+      "depends_on": [],
+      "conflicts_with": [],
+      "evidence": [],
+      "assumptions": [],
+      "alternatives": [],
+      "falsification_tests": [
+        "A targeted validation test or remote workflow contradicts this claim."
+      ],
+      "uncertainty": "insufficient_evidence",
+      "severity": "medium",
+      "source_ref": "",
+      "domain": "",
+      "confidence": 0.25,
+      "confidence_band": "low",
+      "failures": [],
+      "metadata": {}
+    },
+    {
+      "id": "REQ-RELEASE-002",
+      "text": "The resolver rejects invalid versions, stale source SHAs, other refs and mixed commits.",
+      "kind": "requirement",
+      "status": "draft",
+      "boundary": [
+        "AXIOVEX/michigan-workforce-intelligence report workflow"
+      ],
+      "depends_on": [],
+      "conflicts_with": [],
+      "evidence": [],
+      "assumptions": [],
+      "alternatives": [],
+      "falsification_tests": [
+        "A targeted validation test or remote workflow contradicts this claim."
+      ],
+      "uncertainty": "insufficient_evidence",
+      "severity": "medium",
+      "source_ref": "",
+      "domain": "",
+      "confidence": 0.25,
+      "confidence_band": "low",
+      "failures": [
+        {
+          "id": "AEE-REQ-RELEASE-002-IRREDUCIBILITY-CHALLENGE",
+          "claim_id": "REQ-RELEASE-002",
+          "challenge": "Irreducibility challenge",
+          "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+          "severity": "medium",
+          "category": "coverage_gap",
+          "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+          "resolved": false
+        }
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "REQ-RELEASE-003",
+      "text": "Publication requires all existing portable, Docker report and checksum gates.",
+      "kind": "requirement",
+      "status": "draft",
+      "boundary": [
+        "AXIOVEX/michigan-workforce-intelligence report workflow"
+      ],
+      "depends_on": [],
+      "conflicts_with": [],
+      "evidence": [],
+      "assumptions": [],
+      "alternatives": [],
+      "falsification_tests": [
+        "A targeted validation test or remote workflow contradicts this claim."
+      ],
+      "uncertainty": "insufficient_evidence",
+      "severity": "medium",
+      "source_ref": "",
+      "domain": "",
+      "confidence": 0.25,
+      "confidence_band": "low",
+      "failures": [
+        {
+          "id": "AEE-REQ-RELEASE-003-IRREDUCIBILITY-CHALLENGE",
+          "claim_id": "REQ-RELEASE-003",
+          "challenge": "Irreducibility challenge",
+          "breakpoint": "Claim may contain multiple independently falsifiable propositions",
+          "severity": "medium",
+          "category": "coverage_gap",
+          "recovery_hint": "Split the claim into atomic propositions and link them explicitly.",
+          "resolved": false
+        }
+      ],
+      "metadata": {}
+    },
+    {
+      "id": "REQ-RELEASE-004",
+      "text": "Downloaded release asset hashes match the published checksum file.",
+      "kind": "requirement",
+      "status": "draft",
+      "boundary": [
+        "AXIOVEX/michigan-workforce-intelligence report workflow"
+      ],
+      "depends_on": [],
+      "conflicts_with": [],
+      "evidence": [],
+      "assumptions": [],
+      "alternatives": [],
+      "falsification_tests": [
+        "A targeted validation test or remote workflow contradicts this claim."
+      ],
+      "uncertainty": "insufficient_evidence",
+      "severity": "medium",
+      "source_ref": "",
+      "domain": "",
+      "confidence": 0.25,
+      "confidence_band": "low",
+      "failures": [],
+      "metadata": {}
+    }
+  ],
+  "scores": {
+    "REQ-RELEASE-001": {
+      "claim_id": "REQ-RELEASE-001",
+      "direct_score": 0.25,
+      "propagated_score": 0.25,
+      "band": "low",
+      "components": {
+        "evidence": 0.0,
+        "independence": 0.0,
+        "falsifiability": 1.0,
+        "boundary": 1.0,
+        "contradiction_penalty": 0
+      },
+      "notes": [
+        "No supporting evidence",
+        "Fewer than two independent supporting sources"
+      ]
+    },
+    "REQ-RELEASE-002": {
+      "claim_id": "REQ-RELEASE-002",
+      "direct_score": 0.25,
+      "propagated_score": 0.25,
+      "band": "low",
+      "components": {
+        "evidence": 0.0,
+        "independence": 0.0,
+        "falsifiability": 1.0,
+        "boundary": 1.0,
+        "contradiction_penalty": 0
+      },
+      "notes": [
+        "No supporting evidence",
+        "Fewer than two independent supporting sources"
+      ]
+    },
+    "REQ-RELEASE-003": {
+      "claim_id": "REQ-RELEASE-003",
+      "direct_score": 0.25,
+      "propagated_score": 0.25,
+      "band": "low",
+      "components": {
+        "evidence": 0.0,
+        "independence": 0.0,
+        "falsifiability": 1.0,
+        "boundary": 1.0,
+        "contradiction_penalty": 0
+      },
+      "notes": [
+        "No supporting evidence",
+        "Fewer than two independent supporting sources"
+      ]
+    },
+    "REQ-RELEASE-004": {
+      "claim_id": "REQ-RELEASE-004",
+      "direct_score": 0.25,
+      "propagated_score": 0.25,
+      "band": "low",
+      "components": {
+        "evidence": 0.0,
+        "independence": 0.0,
+        "falsifiability": 1.0,
+        "boundary": 1.0,
+        "contradiction_penalty": 0
+      },
+      "notes": [
+        "No supporting evidence",
+        "Fewer than two independent supporting sources"
+      ]
+    }
+  },
+  "recoveries": [
+    {
+      "failure_id": "AEE-REQ-RELEASE-002-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-RELEASE-002",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    },
+    {
+      "failure_id": "AEE-REQ-RELEASE-003-IRREDUCIBILITY-CHALLENGE",
+      "claim_id": "REQ-RELEASE-003",
+      "strategy": "decompose",
+      "action": "Split the claim into atomic propositions and link them explicitly.",
+      "priority": 3,
+      "verification": "Every resulting claim contains one independently falsifiable proposition."
+    }
+  ],
+  "metadata": {
+    "threshold": 0.7,
+    "input": "/workspace/scratch/f699cd2db06a/michigan-workforce-intelligence/specs/010-connector-release-requests/claims-initial.json"
+  }
+}
