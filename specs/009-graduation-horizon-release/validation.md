@@ -9,3 +9,5 @@ PDF QA build 2026.09.27.030300Z: executive 3 pages, economic 13 pages, education
 AEE initial prose plan/tasks parses produced zero-claim passes and are not substantive acceptance evidence. They were retained and rerun with structured claims; gather-evidence results were expected before implementation. Final claims distinguish executable test evidence from model-authored interpretations. AEE scoring is advisory and cannot establish statistical truth, employer demand or publication completion.
 
 Remote release publication and downloadable asset verification remain pending until authenticated dispatch succeeds. No release is represented as published merely because local PDFs exist.
+
+Final rebuild exposed one truncated renderer output despite exit zero. The builder now decodes every PNG and retries only a damaged page once, failing if the retry is invalid. The eight edition boundary tests and Ruff passed after this change.

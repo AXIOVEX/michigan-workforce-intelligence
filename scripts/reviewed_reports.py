@@ -99,6 +99,19 @@ def build(stamp: str, config: dict) -> None:
         pages[path.name] = len(PdfReader(path).pages)
         renderer = "/usr/bin/pdftoppm" if Path("/usr/bin/pdftoppm").exists() else "pdftoppm"
         subprocess.run([renderer, "-scale-to", "1200", "-png", str(path), str(qa / path.stem)], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+    # Some renderers can leave a truncated output despite a zero exit status.
+    # Decode every page and retry that page once; never accept partial images.
+    for document, count in pages.items():
+        width = len(str(count))
+        for page in range(1, count + 1):
+            rendered = qa / f"{Path(document).stem}-{page:0{width}d}.png"
+            try:
+                with Image.open(rendered) as opened:
+                    opened.load()
+            except (OSError, ValueError):
+                subprocess.run([renderer, "-f", str(page), "-l", str(page), "-singlefile", "-scale-to", "1200", "-png", str(out / document), str(rendered.with_suffix(""))], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+                with Image.open(rendered) as opened:
+                    opened.load()
     renders = sorted(qa.glob("*.png"))
     for batch in range(0, len(renders), 9):
         sheet = Image.new("RGB", (1800, 1440), "#e3e8eb")
