@@ -4,6 +4,8 @@ Evidence-backed Michigan jobs analysis and a local job-continuity pilot. The pub
 
 [Download report releases](https://github.com/AXIOVEX/michigan-workforce-intelligence/releases/latest) · [Report sources and findings](reports/2026-09-26-graduation-horizons/README.md) · [Data credits](THIRD_PARTY_NOTICES.md)
 
+A public research project by [Axiovex Systems](https://axiovexsystems.com).
+
 The September 26 reviewed edition adds 187 observations, 36 selected state/regional occupation projection rows, graduation-horizon program planning, cross-sector AI task impacts and 12 skills bridges. Its 28-source register distinguishes official observations, projections, proposals and unavailable inputs. The application database has not been refreshed by this offline research edition. See [SDD and verification](specs/009-graduation-horizon-release/verification-matrix.md).
 
 ## Ask naturally
